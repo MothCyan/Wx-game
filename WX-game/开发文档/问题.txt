@@ -1,0 +1,15 @@
+热更新模块
+  版本不兼容导致WEIXINMINIGAMEG没有宏定义
+  解决方法：手动添加
+  URL后缀问题
+  解决方法：CDN和 用户缓存文件，URL 的后缀需要保持一致
+  微信开发者工具没有画面显示直接黑屏
+  解决方法：编辑器更换版本后HybridCLR要重新配置
+  AOT补齐问题，无法加载程序集
+  解决方法：不要从steamingassets加载
+  代码被裁剪
+  解决方法：在主程序集留一个被裁剪程序集的引用
+  代码裁剪link配置错误的配置导致包体变大，无法正常打包
+  解决方法：重新让HybrirdCLRd配置
+  Building Library\Bee\artifacts\WebGL\ManagedStripped failed with output:
+  解决方法：查找项目中有无多余的link.xml

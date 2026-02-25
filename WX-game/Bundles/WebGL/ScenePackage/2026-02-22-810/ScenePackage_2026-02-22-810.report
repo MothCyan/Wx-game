@@ -1,0 +1,159 @@
+{
+    "Summary": {
+        "YooVersion": "2.3.18",
+        "UnityVersion": "2022.3.43f1c1",
+        "BuildDate": "2026/2/22 13:30:41",
+        "BuildSeconds": 1,
+        "BuildTarget": 20,
+        "BuildPipeline": "ScriptableBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "ScenePackage",
+        "BuildPackageVersion": "2026-02-22-810",
+        "BuildPackageNote": "2026/2/22 13:30:38",
+        "UniqueBundleName": false,
+        "EnableAddressable": true,
+        "SupportExtensionless": true,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": true,
+        "UseAssetDependencyDB": false,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionServicesClassName": "YooAsset.Editor.EncryptionNone",
+        "ManifestProcessServicesClassName": "YooAsset.Editor.ManifestProcessNone",
+        "ManifestRestoreServicesClassName": "YooAsset.Editor.ManifestRestoreNone",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "ReplaceAssetPathWithAddress": false,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "unityshaders.bundle",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 4,
+        "MainAssetTotalCount": 1,
+        "AllBundleTotalCount": 4,
+        "AllBundleTotalSize": 44857,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "TestScene",
+            "AssetPath": "Assets/Scenes/TestScene.unity",
+            "AssetGUID": "5c5f48dc3eb351a42bea0fabc95d0eb0",
+            "AssetTags": [],
+            "MainBundleName": "assets_scenes.bundle",
+            "MainBundleSize": 11749,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Prefs/pref1.prefab",
+                    "AssetGUID": "8dc9ab57444bb2448abfa806f12088c4"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_prefs.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_scenes.bundle",
+            "FileName": "db7ef9b55764ccbf23db675a4c54c290.bundle",
+            "FileHash": "db7ef9b55764ccbf23db675a4c54c290",
+            "FileCRC": 2269381280,
+            "FileSize": 11749,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Scenes/TestScene.unity",
+                    "AssetGUID": "5c5f48dc3eb351a42bea0fabc95d0eb0"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_prefs.bundle",
+            "FileName": "dced3d9de9f56ae35b6b5c899b2a9964.bundle",
+            "FileHash": "dced3d9de9f56ae35b6b5c899b2a9964",
+            "FileCRC": 2024493849,
+            "FileSize": 7065,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Prefs/pref1.prefab",
+                    "AssetGUID": "8dc9ab57444bb2448abfa806f12088c4"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+            "FileName": "de4a728f438386e04841dfc833f09fbd.bundle",
+            "FileHash": "de4a728f438386e04841dfc833f09fbd",
+            "FileCRC": 3311968222,
+            "FileSize": 2452,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_scenes.bundle",
+                "share_assets_prefs.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                }
+            ]
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "FileName": "4552b2b1d8880f814eed938f082e8163.bundle",
+            "FileHash": "4552b2b1d8880f814eed938f082e8163",
+            "FileCRC": 2522029350,
+            "FileSize": 23591,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_scenes.bundle",
+                "share_assets_prefs.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ]
+        }
+    ],
+    "IndependAssets": []
+}

@@ -1,0 +1,266 @@
+{
+    "Summary": {
+        "YooVersion": "2.3.18",
+        "UnityVersion": "2022.3.62f2c1",
+        "BuildDate": "2026/2/25 19:53:48",
+        "BuildSeconds": 8,
+        "BuildTarget": 20,
+        "BuildPipeline": "ScriptableBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "MyPackage",
+        "BuildPackageVersion": "2026-02-25-1193",
+        "BuildPackageNote": "2026/2/25 19:53:39",
+        "UniqueBundleName": false,
+        "EnableAddressable": true,
+        "SupportExtensionless": true,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": true,
+        "UseAssetDependencyDB": false,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionServicesClassName": "YooAsset.Editor.EncryptionNone",
+        "ManifestProcessServicesClassName": "YooAsset.Editor.ManifestProcessNone",
+        "ManifestRestoreServicesClassName": "YooAsset.Editor.ManifestRestoreNone",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "ReplaceAssetPathWithAddress": false,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "unityshaders.bundle",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 9,
+        "MainAssetTotalCount": 6,
+        "AllBundleTotalCount": 7,
+        "AllBundleTotalSize": 1507635,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "Cinemachine.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/Cinemachine.dll.bytes",
+            "AssetGUID": "241f59a50cc03b74885f2918eeda83c9",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1336391,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/mscorlib.dll.bytes",
+            "AssetGUID": "e62a9e361be6c134e87a14e6c5d5801f",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1336391,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "UnityEngine.CoreModule.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.CoreModule.dll.bytes",
+            "AssetGUID": "e6d4a608b0578434ab2042def44842fb",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1336391,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Hotupdate.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/Hotupdate.dll.bytes",
+            "AssetGUID": "200958c14fb08b146bab69da7d265c7b",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll.bundle",
+            "MainBundleSize": 7196,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "GameRoot",
+            "AssetPath": "Assets/HotUpdate/Prefs/GameRoot.prefab",
+            "AssetGUID": "109fd19218b073442aa97d33097f1709",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs.bundle",
+            "MainBundleSize": 2317,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "TestScene",
+            "AssetPath": "Assets/HotUpdate/Scenes/TestScene.unity",
+            "AssetGUID": "5c5f48dc3eb351a42bea0fabc95d0eb0",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_scenes.bundle",
+            "MainBundleSize": 19422,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/4e517e8154573099f12b377a1b5a3e38.png",
+                    "AssetGUID": "a79391742a0dfa245905ed215079a3f1"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_hotupdate_dll.bundle",
+            "FileName": "fa0403896f028b19f5d05eccd89596ba.bundle",
+            "FileHash": "fa0403896f028b19f5d05eccd89596ba",
+            "FileCRC": 1025343000,
+            "FileSize": 7196,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/Hotupdate.dll.bytes",
+                    "AssetGUID": "200958c14fb08b146bab69da7d265c7b"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_dll_aot.bundle",
+            "FileName": "c5de61b835b220223bbc45df9dd34059.bundle",
+            "FileHash": "c5de61b835b220223bbc45df9dd34059",
+            "FileCRC": 3012665283,
+            "FileSize": 1336391,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/Cinemachine.dll.bytes",
+                    "AssetGUID": "241f59a50cc03b74885f2918eeda83c9"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/mscorlib.dll.bytes",
+                    "AssetGUID": "e62a9e361be6c134e87a14e6c5d5801f"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.CoreModule.dll.bytes",
+                    "AssetGUID": "e6d4a608b0578434ab2042def44842fb"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs.bundle",
+            "FileName": "a5ae193f37737f99dffbafa426cdb639.bundle",
+            "FileHash": "a5ae193f37737f99dffbafa426cdb639",
+            "FileCRC": 4228839639,
+            "FileSize": 2317,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/GameRoot.prefab",
+                    "AssetGUID": "109fd19218b073442aa97d33097f1709"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_scenes.bundle",
+            "FileName": "767094e4dd28c776134f9c98677b12d8.bundle",
+            "FileHash": "767094e4dd28c776134f9c98677b12d8",
+            "FileCRC": 1913451297,
+            "FileSize": 19422,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_art.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Scenes/TestScene.unity",
+                    "AssetGUID": "5c5f48dc3eb351a42bea0fabc95d0eb0"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art.bundle",
+            "FileName": "d8af13e4b0f17f29fa151444c1386d91.bundle",
+            "FileHash": "d8af13e4b0f17f29fa151444c1386d91",
+            "FileCRC": 3228569408,
+            "FileSize": 116274,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/4e517e8154573099f12b377a1b5a3e38.png",
+                    "AssetGUID": "a79391742a0dfa245905ed215079a3f1"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+            "FileName": "768912d143ac91a3ea1a043d5e9a2c6d.bundle",
+            "FileHash": "768912d143ac91a3ea1a043d5e9a2c6d",
+            "FileCRC": 2508609350,
+            "FileSize": 2452,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                }
+            ]
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "FileName": "6693c14198b389c2b8824d881255cea0.bundle",
+            "FileHash": "6693c14198b389c2b8824d881255cea0",
+            "FileCRC": 164752776,
+            "FileSize": 23583,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_scenes.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ]
+        }
+    ],
+    "IndependAssets": []
+}
