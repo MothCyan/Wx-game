@@ -36,9 +36,11 @@ public abstract class BaseEnemy : MonoBehaviour, IRecycle, IEnemySetHP
 
     public void SubHp(float hp, Hurt hurt)
     {
-        
         if(hurt != null)
         {
+            // 先乘技能专属增伤
+            hp *= 1 + hurt.SkillHurtAmplification;
+
             if(hurt.SkillType == SkillType.普攻)
             {
                 hp *= 1 + PlayerData.Instance.AttackPowerAmplification;

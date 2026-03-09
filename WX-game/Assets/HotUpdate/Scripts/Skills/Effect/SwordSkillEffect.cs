@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class SwordSkillEffect : MonoBehaviour, IAttack
 {
-    
     public GameObject target { get; set; }
     public float AttackSpeed { get; set; }
     public float Scale { get; set; }
+    public float Cooldownreduction { get; set; }
+    public float HurtAmplification { get; set; }  // 圣剑专属增伤倍率
+
     private float timer = 0f;
-     public float Cooldownreduction { get; set; }
+    private Vector3 baseSwordScale = Vector3.zero;
 
     void Start()
     {
@@ -33,9 +35,18 @@ public class SwordSkillEffect : MonoBehaviour, IAttack
             return false;
 
         GameObject Skill9 = PoolManager.Instance.GetObj("Skill9");
-        Skill9.transform.localScale = new Vector3(Skill9.transform.localScale.x + Skill9.transform.localScale.x * Scale, Skill9.transform.localScale.y + Skill9.transform.localScale.y * Scale, 1);
+        if (Skill9 == null) return false;
+
+        // 记录原始 scale，基于原始值计算，避免累积
+        if (baseSwordScale == Vector3.zero)
+            baseSwordScale = Skill9.transform.localScale;
+        Skill9.transform.localScale = baseSwordScale * (1f + Scale);
+
+        // 将专属增伤写入 Hurt 组件
+        Hurt hurt = Skill9.GetComponent<Hurt>();
+        if (hurt != null) hurt.SkillHurtAmplification = HurtAmplification;
+
         Skill9.transform.position = new Vector2(target.transform.position.x, target.transform.position.y + 2f);
         return true;
-
     }
 }

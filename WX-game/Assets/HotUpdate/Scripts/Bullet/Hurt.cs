@@ -11,6 +11,7 @@ public class Hurt : MonoBehaviour
     public int id = 0;
     public SkillType SkillType = SkillType.普攻;
     public HurtType HurtType = HurtType.Recycle;
+    public float SkillHurtAmplification = 0f; // 单技能专属增伤倍率（叠加到 SubHp 里）
     void Start()
     {
         if (DestroyTime >= 0)

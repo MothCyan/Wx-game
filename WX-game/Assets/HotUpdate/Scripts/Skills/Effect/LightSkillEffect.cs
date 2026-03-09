@@ -7,22 +7,25 @@ public class LightSkillEffect : MonoBehaviour, IAttack
     public GameObject target { get; set; }
     public float AttackSpeed { get; set; }
     public float Scale { get; set; }
+    public float Cooldownreduction { get; set; }
+    public float HurtAmplification { get; set; }  // 光柱专属增伤倍率
+
     private float timer = 0f;
-     public float Cooldownreduction { get; set; }
+    private Vector3 baseLightScale = Vector3.zero;
 
     void Start()
     {
         PlayerController.Attack.attacks.Add(this);
         AttackSpeed = 1.5f;
     }
+
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= AttackSpeed-Cooldownreduction)
+        if (timer >= AttackSpeed - Cooldownreduction)
         {
             if (Attack())
                 timer = 0f;
-
         }
     }
 
@@ -34,8 +37,14 @@ public class LightSkillEffect : MonoBehaviour, IAttack
         GameObject Skill8 = PoolManager.Instance.GetObj("Skill8");
         if (Skill8 == null) return false;
 
-        // 对象池回收时已重置为原始 Scale，直接在原始基础上增大
-        Skill8.transform.localScale *= (1f + Scale);
+        if (baseLightScale == Vector3.zero)
+            baseLightScale = Skill8.transform.localScale;
+
+        Skill8.transform.localScale = baseLightScale * (1f + Scale);
+
+        Hurt hurt = Skill8.GetComponent<Hurt>();
+        if (hurt != null) hurt.SkillHurtAmplification = HurtAmplification;
+
         Skill8.transform.position = target.transform.position;
         return true;
     }

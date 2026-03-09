@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class WaterSkillEffect : MonoBehaviour, IAttack
 {
-    
     public GameObject target { get; set; }
     public float AttackSpeed { get; set; }
     public float Scale { get; set; }
     public float Cooldownreduction { get; set; }
+    public float HurtAmplification { get; set; }  // 水魔法专属增伤倍率
+
     private float timer = 0f;
+    private Vector3 baseBallScale = Vector3.zero;
 
     void Start()
     {
@@ -28,8 +30,6 @@ public class WaterSkillEffect : MonoBehaviour, IAttack
         }
     }
 
-    private Vector3 baseBallScale = Vector3.zero; // 水球 prefab 原始 scale，首次记录
-
     public bool Attack()
     {
         // target 为空或已被回收（inactive）时跳过
@@ -46,6 +46,9 @@ public class WaterSkillEffect : MonoBehaviour, IAttack
 
         // 每次都从原始 scale 基础上乘以倍率，而不是读取当前 localScale
         waterBall.transform.localScale = baseBallScale * (1f + Scale);
+
+        Hurt hurt = waterBall.GetComponent<Hurt>();
+        if (hurt != null) hurt.SkillHurtAmplification = HurtAmplification; // 设置增伤倍率
 
         waterBall.transform.position = target.transform.position;
         return true;
