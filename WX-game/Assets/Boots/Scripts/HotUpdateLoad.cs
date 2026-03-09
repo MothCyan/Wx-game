@@ -4,6 +4,7 @@ using System.Reflection;
 using HybridCLR;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using YooAsset;
 using System.IO;
 
@@ -14,8 +15,13 @@ public class HotUpdateLoad : MonoBehaviour
     // public ResourcePackage ScenePackage;
     public string HostHttp = "http://192.168.100.121/ServerFile/";
     public EPlayMode LoadMode = EPlayMode.EditorSimulateMode;
+
+    [Header("下载进度UI")]
+    public Image ProgressBarFill;   // Image 的 Type 设为 Filled，Fill Method 设为 Horizontal
+    public Text ProgressText;
     void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         StartCoroutine(Init());
     }
     void Start()
@@ -32,16 +38,17 @@ public class HotUpdateLoad : MonoBehaviour
         Assembly hotUpdateAsss = Assembly.Load(dllBytes);
 
 
+        
+        yield return LoadScene("TestScene");
+        yield return null;
         var handle = Package.LoadAssetAsync<GameObject>(GameRoot);
         yield return handle;
         Debug.Log($"加载对象完毕。状态{handle.Status}");
         if (handle.Status == EOperationStatus.Succeed)
         {
-            Instantiate(handle.InstantiateSync());
+            handle.InstantiateSync();
             
         }
-        yield return LoadScene("TestScene");
-        yield return null;
         Debug.Log("Load方法执行完毕"); Debug.Log("Load方法执行完毕"); Debug.Log("Load方法执行完毕"); Debug.Log("Load方法执行完毕");
     }
 
@@ -136,306 +143,62 @@ public class HotUpdateLoad : MonoBehaviour
 
     public IEnumerator OnEditorSimulsteMode(ResourcePackage package, string PackageName)
     {
-        // 初始化资源系统
         YooAssets.Initialize();
+        var buildResult = EditorSimulateModeHelper.SimulateBuild(PackageName);
+        var createParameters = new EditorSimulateModeParameters();
+        createParameters.EditorFileSystemParameters = FileSystemParameters.CreateDefaultEditorFileSystemParameters(buildResult.PackageRootDirectory);
+        var initOp = package.InitializeAsync(createParameters);
+        yield return initOp;
+        if (initOp.Status != EOperationStatus.Succeed) { Debug.LogError($"初始化失败：{initOp.Error}"); yield break; }
+        Debug.Log($"加载模式{LoadMode}资源包初始化成功");
 
-        // 创建包容器
-
-        // 根据 LoadMode 选择不同的加载流程
-        if (LoadMode == EPlayMode.EditorSimulateMode)
-        {
-            // ========== 编辑器模拟模式流程 ==========
-            // 配置包容器
-            Debug.Log($"initializationOperation");
-            InitializationOperation initializationOperation = null;
-            var buildResult = EditorSimulateModeHelper.SimulateBuild(PackageName);
-            var packageRoot = buildResult.PackageRootDirectory;
-            var createParameters = new EditorSimulateModeParameters();
-            createParameters.EditorFileSystemParameters = FileSystemParameters.CreateDefaultEditorFileSystemParameters(packageRoot);
-            initializationOperation = package.InitializeAsync(createParameters);
-            yield return initializationOperation;
-            if (initializationOperation.Status == EOperationStatus.Succeed)
-                Debug.Log($"加载模式{LoadMode}资源包初始化成功！{package.PackageValid}");
-            else
-                Debug.LogError($"加载模式{LoadMode}资源包初始化失败：{initializationOperation.Error}");
-
-            // 请求包体版本号
-            var operation = package.RequestPackageVersionAsync();
-            yield return operation;
-            var packageVersion = operation.PackageVersion;
-
-            // 更新包体清单
-            Debug.Log($"UpdatePackageManifestAsync");
-            var operation2 = package.UpdatePackageManifestAsync(packageVersion);
-            yield return operation2;
-
-            //创建下载器
-            int downloadingMaxNum = 10;
-            int failedTryAgain = 3;
-            var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-
-            // 初始化完成后，开始加载资源
-            Debug.Log("Package 初始化完成，开始加载资源");
-
-
-        }
+        yield return RequestAndUpdateManifest(package);
+        yield return DownloadAssets(package);
     }
-    public IEnumerator OnOfflinePlayMode(ResourcePackage package, string PackageName)
 
+    public IEnumerator OnOfflinePlayMode(ResourcePackage package, string PackageName)
     {
-        // 3. 配置本地 "包容器" - 单机模式
         Debug.Log("开始初始化单机模式");
-        InitializationOperation initializationOperation = null;
         var createParameters = new OfflinePlayModeParameters();
         createParameters.BuildinFileSystemParameters = FileSystemParameters.CreateDefaultBuildinFileSystemParameters();
-        initializationOperation = package.InitializeAsync(createParameters);
-        yield return initializationOperation;
+        var initOp = package.InitializeAsync(createParameters);
+        yield return initOp;
+        if (initOp.Status != EOperationStatus.Succeed) { Debug.LogError($"初始化失败：{initOp.Error}"); yield break; }
+        Debug.Log($"加载模式{LoadMode}资源包初始化成功");
 
-        if (initializationOperation.Status == EOperationStatus.Succeed)
-            Debug.Log($"加载模式{LoadMode}资源包初始化成功！PackageValid: {package.PackageValid}");
-        else
-        {
-            Debug.LogError($"加载模式{LoadMode}资源包初始化失败：{initializationOperation.Error}");
-            yield break;
-        }
-        // 请求包体版本号
-        var operation = package.RequestPackageVersionAsync();
-        yield return operation;
-        var packageVersion = operation.PackageVersion;
-
-        // 更新包体清单
-        var operation2 = package.UpdatePackageManifestAsync(packageVersion);
-        yield return operation2;
-
-        //创建下载器
-        int downloadingMaxNum = 10;
-        int failedTryAgain = 3;
-        var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-
+        yield return RequestAndUpdateManifest(package);
+        yield return DownloadAssets(package);
     }
+
     public IEnumerator OnHostPlayMode(ResourcePackage package, string PackageName)
     {
-        //这个翻译看起来 就是默认服务器，就是访问包清单时，优先选择的服务器
-        string defaultHostServer = HostHttp;
-        //这个fallback，即失败时返回。就是访问默认服务器失败时，用这个链接。
-        string fallbackHostServer = HostHttp;
-        IRemoteServices remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-        var cacheFileSystemParams = FileSystemParameters.CreateDefaultCacheFileSystemParameters(remoteServices);
-        var buildinFileSystemParams = FileSystemParameters.CreateDefaultBuildinFileSystemParameters();
-
+        IRemoteServices remoteServices = new RemoteServices(HostHttp, HostHttp);
         var createParameters = new HostPlayModeParameters();
-        createParameters.BuildinFileSystemParameters = buildinFileSystemParams;
-        createParameters.CacheFileSystemParameters = cacheFileSystemParams;
+        createParameters.BuildinFileSystemParameters = FileSystemParameters.CreateDefaultBuildinFileSystemParameters();
+        createParameters.CacheFileSystemParameters = FileSystemParameters.CreateDefaultCacheFileSystemParameters(remoteServices);
+        var initOp = package.InitializeAsync(createParameters);
+        yield return initOp;
+        if (initOp.Status != EOperationStatus.Succeed) { Debug.LogError($"资源包初始化失败：{initOp.Error}"); yield break; }
+        Debug.Log("资源包初始化成功！");
 
-        var initOperation = package.InitializeAsync(createParameters);
-        yield return initOperation;
-
-        if (initOperation.Status == EOperationStatus.Succeed)
-            Debug.Log("资源包初始化成功！");
-        else
-        {
-            Debug.LogError($"资源包初始化失败：{initOperation.Error}");
-            yield break;
-        }
-
-
-        //这里，Status应该成功才走
-        // 请求包体版本号
-        var operation = package.RequestPackageVersionAsync();
-        yield return operation; //等待请求包体版本号完成
-
-        var packageVersion = operation.PackageVersion;
-        Debug.Log($"RequestPackageVersionAsync -> {operation.Status} 版本号{packageVersion} ");
-        if (operation.Status != EOperationStatus.Succeed)
-        {
-            Debug.LogError($"请求包体版本号失败：{operation.Error}");
-            yield break;
-        }
-
-        // 更新包体清单
-        var operation2 = package.UpdatePackageManifestAsync(packageVersion);
-        yield return operation2; //等待更新包体清单完成
-
-        Debug.Log($"UpdatePackageManifestAsync -> {operation2.Status} 清单更新完成");
-
-        if (operation2.Status != EOperationStatus.Succeed)
-        {
-            Debug.LogError($"更新包体清单失败：{operation2.Error}");
-            yield break;
-        }
-
-        //创建下载器
-        int downloadingMaxNum = 10;
-        int failedTryAgain = 3;
-        var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-        Debug.Log($"当前需要更新文件数量 -> {downloader.TotalDownloadCount}");
-        if (downloader.TotalDownloadCount != 0)
-        {
-            //需要下载的文件总数和总大小
-            int totalDownloadCount = downloader.TotalDownloadCount;
-            long totalDownloadBytes = downloader.TotalDownloadBytes;
-            //注册回调方法
-            downloader.DownloadFinishCallback = (result) =>
-            {
-
-                Debug.Log($"DownloadFinishCallback callback {result.PackageName} -> {result.Succeed}");
-            }; //当下载器结束（无论成功或失败）
-            downloader.DownloadErrorCallback = (result) =>
-            {
-                string Error = $"DownloadErrorCallback callback {result.PackageName} -> {result.ErrorInfo}->{result.FileName}";
-                Debug.Log(Error);
-            }; //当下载器发生错误
-            downloader.DownloadUpdateCallback = (result) =>
-            {
-                //获取下载的字节
-                string bytesMsg = $"{result.CurrentDownloadBytes} / {result.TotalDownloadBytes}";
-                //获取下载数量
-                string countMsg = $"{result.CurrentDownloadCount} / {result.TotalDownloadCount}";
-                string msg = $"DownloadUpdateCallback callback";
-                msg += $"\n{result.PackageName} -> {result.Progress}";
-                msg += "\n" + countMsg;
-                msg += "\n" + bytesMsg;
-                Debug.Log(msg);
-                //这样就能得到所有回调给的数据了。也许玩家不需要看，但是开发者你需要。
-            }; //当下载进度发生变化
-            downloader.DownloadFileBeginCallback = (result) =>
-            {
-
-                string PackageName = $"DownloadFileBeginCallback callback {result.PackageName} -> {result.FileName} ->{result.FileSize}";
-                Debug.Log(PackageName);
-            }; //当开始下载某个文件
-
-            //开启下载
-            downloader.BeginDownload();
-            yield return downloader;
-
-            //检测下载结果
-            Debug.Log($"BeginDownload。状态{downloader.Status}");
-
-            if (downloader.Status != EOperationStatus.Succeed)
-            {
-                yield break;
-            }
-            Debug.Log("完成");
-
-
-        }
-
+        yield return RequestAndUpdateManifest(package);
+        yield return DownloadAssets(package);
     }
+
     public IEnumerator OnWebPlayMode(ResourcePackage package, string PackageName)
     {
-        // WebPlayMode 需要完整的包路径
-        // 服务器上应该有: ServerFile/WebGL/MyPackage/ 目录
-        string defaultHostServer = $"{HostHttp}WebGL/{PackageName}";
-        string fallbackHostServer = $"{HostHttp}WebGL/{PackageName}";
-
-        Debug.Log($"=== WebPlayMode 初始化 ===");
-        Debug.Log($"defaultHostServer: {defaultHostServer}");
-        Debug.Log($"fallbackHostServer: {fallbackHostServer}");
-
-        IRemoteServices remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-        var webServerFileSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
-        var webRemoteFileSystemParams = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices); //支持跨域下载
-
+        string hostServer = $"{HostHttp}WebGL/{PackageName}";
+        IRemoteServices remoteServices = new RemoteServices(hostServer, hostServer);
         var createParameters = new WebPlayModeParameters();
-        createParameters.WebServerFileSystemParameters = webServerFileSystemParams;
-        createParameters.WebRemoteFileSystemParameters = webRemoteFileSystemParams;
+        createParameters.WebServerFileSystemParameters = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
+        createParameters.WebRemoteFileSystemParameters = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices);
+        var initOp = package.InitializeAsync(createParameters);
+        yield return initOp;
+        if (initOp.Status != EOperationStatus.Succeed) { Debug.LogError($"资源包初始化失败：{initOp.Error}"); yield break; }
+        Debug.Log("资源包初始化成功");
 
-        var initOperation = package.InitializeAsync(createParameters);
-        yield return initOperation;
-
-        if (initOperation.Status == EOperationStatus.Succeed)
-        {
-            Debug.Log("资源包初始化成功");
-        }
-        else
-        {
-            Debug.LogError($"资源包初始化失败：{initOperation.Error}");
-            yield break;
-        }
-        //这里，Status应该成功才走
-        // 请求包体版本号
-        var operation = package.RequestPackageVersionAsync();
-        yield return operation; //等待请求包体版本号完成
-
-        var packageVersion = operation.PackageVersion;
-        Debug.Log($"RequestPackageVersionAsync -> {operation.Status} 版本号{packageVersion} ");
-        if (operation.Status != EOperationStatus.Succeed)
-        {
-            Debug.LogError($"请求包体版本号失败：{operation.Error}");
-            yield break;
-        }
-
-        // 更新包体清单
-        var operation2 = package.UpdatePackageManifestAsync(packageVersion);
-        yield return operation2; //等待更新包体清单完成
-
-        Debug.Log($"UpdatePackageManifestAsync -> {operation2.Status} 清单更新完成");
-
-        if (operation2.Status != EOperationStatus.Succeed)
-        {
-            Debug.LogError($"更新包体清单失败：{operation2.Error}");
-            yield break;
-        }
-
-        //创建下载器
-        int downloadingMaxNum = 10;
-        int failedTryAgain = 3;
-        var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-        Debug.Log($"当前需要更新文件数量 -> {downloader.TotalDownloadCount}");
-        if (downloader.TotalDownloadCount != 0)
-        {
-            //需要下载的文件总数和总大小
-            int totalDownloadCount = downloader.TotalDownloadCount;
-            long totalDownloadBytes = downloader.TotalDownloadBytes;
-            //注册回调方法
-            downloader.DownloadFinishCallback = (result) =>
-            {
-
-                Debug.Log($"DownloadFinishCallback callback {result.PackageName} -> {result.Succeed}");
-            }; //当下载器结束（无论成功或失败）
-            downloader.DownloadErrorCallback = (result) =>
-            {
-                string Error = $"DownloadErrorCallback callback {result.PackageName} -> {result.ErrorInfo}->{result.FileName}";
-                Debug.Log(Error);
-            }; //当下载器发生错误
-            downloader.DownloadUpdateCallback = (result) =>
-            {
-                //获取下载的字节
-                string bytesMsg = $"{result.CurrentDownloadBytes} / {result.TotalDownloadBytes}";
-                //获取下载数量
-                string countMsg = $"{result.CurrentDownloadCount} / {result.TotalDownloadCount}";
-                string msg = $"DownloadUpdateCallback callback";
-                msg += $"\n{result.PackageName} -> {result.Progress}";
-                msg += "\n" + countMsg;
-                msg += "\n" + bytesMsg;
-                Debug.Log(msg);
-                //这样就能得到所有回调给的数据了。也许玩家不需要看，但是开发者你需要。
-            }; //当下载进度发生变化
-            downloader.DownloadFileBeginCallback = (result) =>
-            {
-
-                string PackageName = $"DownloadFileBeginCallback callback {result.PackageName} -> {result.FileName} ->{result.FileSize}";
-                Debug.Log(PackageName);
-            }; //当开始下载某个文件
-
-            //开启下载
-            downloader.BeginDownload();
-            yield return downloader;
-
-            //检测下载结果
-            Debug.Log($"BeginDownload。状态{downloader.Status}");
-
-            if (downloader.Status != EOperationStatus.Succeed)
-            {
-                yield break;
-            }
-            Debug.Log("完成");
-
-
-        }
-
-
+        yield return RequestAndUpdateManifest(package);
+        yield return DownloadAssets(package);
     }
 
     /// <summary>
@@ -445,159 +208,109 @@ public class HotUpdateLoad : MonoBehaviour
     public IEnumerator OnCustomMode(ResourcePackage package, string packageName)
     {
         Debug.Log("=== 开始微信小游戏模式初始化 ===");
-
-        InitializationOperation initializationOperation = null;
         var createParameters = new WebPlayModeParameters();
 
 #if UNITY_WEBGL && WEIXINMINIGAME && !UNITY_EDITOR
-        // 微信小游戏环境 - 使用微信文件系统
-        Debug.Log("使用微信文件系统");
-        
-        //这里是CDN目录
-        string defaultHostServer = HostHttp;
-        string fallbackHostServer = HostHttp;
-
-        //这里是文件缓冲目录
-        string packageRoot =
-            $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE";
-        // 重要：添加 /yoo 子目录以匹配 Bundle Path Identifier
-
-        //这里是热更文件的目录，拼接一下
-        defaultHostServer += "/StreamingAssets/yoo/MyPackage"; //注意尾部不能带/
-        fallbackHostServer += "/StreamingAssets/yoo/MyPackage"; //注意尾部不能带/
-        packageRoot += "/StreamingAssets/yoo/MyPackage"; //注意尾部不能带/
-        
-        //实际上就是一个目录位置而已，可以不拼，
-        // 但是转为小游戏时候已经有一个目录结构了。
-        // 那么直接使用转换的目录接口即可
-        //转换的webgl目录就是放置到CDN的目录；
-        //直接丢过去方便。而加载资源就需要进入到这个目录下。的子目录。
-        //
-        //这里比较讲究
-        //CDN抬头 http://192.168.100.121/ServerFile;
-        //下面是完整路径，那么host路径需要拼接/StreamingAssets/yoo/MyPackage
-        //http://192.168.100.121/ServerFile/StreamingAssets/yoo/MyPackage
-        //此处的root也需要拼接 一模一样的路径/StreamingAssets/yoo/MyPackage
-        //末尾不能带/
-        // 后续路径拼接需要相同
-        
-
-
-
+        string defaultHostServer = HostHttp + "/StreamingAssets/yoo/MyPackage";
+        string fallbackHostServer = defaultHostServer;
+        string packageRoot = $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/StreamingAssets/yoo/MyPackage";
         Debug.Log($"CDN服务器: {defaultHostServer}");
         Debug.Log($"本地缓存路径: {packageRoot}");
-        
         IRemoteServices remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
         createParameters.WebServerFileSystemParameters = WechatFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteServices);
 #else
-        // 编辑器或其他环境 - 使用标准文件系统
-        Debug.Log("使用标准 WebGL 文件系统");
         createParameters.WebServerFileSystemParameters = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
 #endif
 
-        // 1. 初始化包
-        initializationOperation = package.InitializeAsync(createParameters);
-        yield return initializationOperation;
-
-        if (initializationOperation.Status != EOperationStatus.Succeed)
-        {
-            Debug.LogError($"资源包初始化失败：{initializationOperation.Error}");
-            yield break;
-        }
+        var initOp = package.InitializeAsync(createParameters);
+        yield return initOp;
+        if (initOp.Status != EOperationStatus.Succeed) { Debug.LogError($"资源包初始化失败：{initOp.Error}"); yield break; }
         Debug.Log("✓ 资源包初始化成功");
 
-        // 2. 请求版本号
-        var versionOperation = package.RequestPackageVersionAsync();
-        yield return versionOperation;
+        yield return RequestAndUpdateManifest(package);
+        yield return DownloadAssets(package);
 
-        if (versionOperation.Status != EOperationStatus.Succeed)
-        {
-            Debug.LogError($"请求版本号失败：{versionOperation.Error}");
-            yield break;
-        }
+        Debug.Log("=== 开始加载游戏资源 ===");
+    }
 
-        string packageVersion = versionOperation.PackageVersion;
-        Debug.Log($"✓ 获取版本号成功: {packageVersion}");
+    /// <summary>请求版本号并更新清单</summary>
+    private IEnumerator RequestAndUpdateManifest(ResourcePackage package)
+    {
+        var versionOp = package.RequestPackageVersionAsync();
+        yield return versionOp;
+        if (versionOp.Status != EOperationStatus.Succeed) { Debug.LogError($"请求版本号失败：{versionOp.Error}"); yield break; }
+        Debug.Log($"✓ 版本号: {versionOp.PackageVersion}");
 
-        // 3. 更新清单
-        var updateOperation = package.UpdatePackageManifestAsync(packageVersion);
-        yield return updateOperation;
-
-        if (updateOperation.Status != EOperationStatus.Succeed)
-        {
-            Debug.LogError($"更新清单失败：{updateOperation.Error}");
-            yield break;
-        }
+        var manifestOp = package.UpdatePackageManifestAsync(versionOp.PackageVersion);
+        yield return manifestOp;
+        if (manifestOp.Status != EOperationStatus.Succeed) { Debug.LogError($"更新清单失败：{manifestOp.Error}"); yield break; }
         Debug.Log("✓ 清单更新成功");
+    }
 
-        // 4. 创建下载器检查是否需要下载
-        int downloadingMaxNum = 10;
-        int failedTryAgain = 3;
-        var downloader = package.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-
-        Debug.Log($"当前需要更新文件数量: {downloader.TotalDownloadCount}");
-
-        if (downloader.TotalDownloadCount > 0)
-        {
-            Debug.Log($"需要下载文件数量: {downloader.TotalDownloadCount}");
-            Debug.Log($"需要下载大小: {downloader.TotalDownloadBytes} bytes");
-
-            // 注册回调
-            downloader.DownloadFinishCallback = (result) =>
-            {
-                Debug.Log($"下载完成 {result.PackageName} -> {result.Succeed}");
-            };
-
-            downloader.DownloadErrorCallback = (result) =>
-            {
-                Debug.LogError($"下载错误 {result.PackageName} -> {result.ErrorInfo} -> {result.FileName}");
-            };
-
-            downloader.DownloadUpdateCallback = (result) =>
-            {
-                string bytesMsg = $"{result.CurrentDownloadBytes} / {result.TotalDownloadBytes}";
-                string countMsg = $"{result.CurrentDownloadCount} / {result.TotalDownloadCount}";
-                string msg = $"下载进度: {result.Progress:P2}";
-                msg += $"\n文件数: {countMsg}";
-                msg += $"\n大小: {bytesMsg}";
-                Debug.Log(msg);
-            };
-
-            downloader.DownloadFileBeginCallback = (result) =>
-            {
-                Debug.Log($"开始下载: {result.FileName} ({result.FileSize} bytes)");
-            };
-
-            // 开始下载
-            downloader.BeginDownload();
-            yield return downloader;
-
-            if (downloader.Status != EOperationStatus.Succeed)
-            {
-                Debug.LogError("下载失败");
-                yield break;
-            }
-            Debug.Log("✓ 资源下载完成");
-        }
-        else
+    /// <summary>创建下载器并执行下载</summary>
+    private IEnumerator DownloadAssets(ResourcePackage package)
+    {
+        var downloader = package.CreateResourceDownloader(10, 3);
+        Debug.Log($"需要更新文件数量: {downloader.TotalDownloadCount}");
+        if (downloader.TotalDownloadCount == 0)
         {
             Debug.Log("✓ 无需下载资源");
+            SetProgressUI(1f, "资源已是最新");
+            yield break;
         }
 
-        // 5. 所有准备工作完成，开始加载资源
-        Debug.Log("=== 开始加载游戏资源 ===");
+        SetProgressUI(0f, "开始下载资源...");
 
+        downloader.DownloadFinishCallback = r => Debug.Log($"下载完成 {r.PackageName} -> {r.Succeed}");
+        downloader.DownloadErrorCallback = r => Debug.LogError($"下载错误 {r.FileName} -> {r.ErrorInfo}");
+        downloader.DownloadUpdateCallback = r =>
+        {
+            Debug.Log($"下载进度: {r.Progress:P2} | {r.CurrentDownloadCount}/{r.TotalDownloadCount}");
+            SetProgressUI(r.Progress, $"下载中 {r.CurrentDownloadCount}/{r.TotalDownloadCount}  ({FormatBytes(r.CurrentDownloadBytes)}/{FormatBytes(r.TotalDownloadBytes)})");
+        };
+        downloader.DownloadFileBeginCallback = r =>
+        {
+            Debug.Log($"开始下载: {r.FileName} ({r.FileSize} bytes)");
+            SetProgressUI(ProgressBarFill != null ? ProgressBarFill.fillAmount : 0f, $"正在下载: {r.FileName}");
+        };
+
+        downloader.BeginDownload();
+        yield return downloader;
+
+        if (downloader.Status != EOperationStatus.Succeed)
+        {
+            Debug.LogError("下载失败");
+            SetProgressUI(0f, "下载失败！");
+            yield break;
+        }
+        SetProgressUI(1f, "下载完成 ✓");
+        Debug.Log("✓ 资源下载完成");
+    }
+
+    private void SetProgressUI(float progress, string message)
+    {
+        if (ProgressBarFill != null)
+            ProgressBarFill.fillAmount = progress;
+        if (ProgressText != null)
+            ProgressText.text = message;
+    }
+
+    private static string FormatBytes(long bytes)
+    {
+        if (bytes >= 1024 * 1024) return $"{bytes / (1024f * 1024f):F1} MB";
+        if (bytes >= 1024) return $"{bytes / 1024f:F1} KB";
+        return $"{bytes} B";
     }
 
     private static IEnumerator LoadMetadataForAOTAssemblies(ResourcePackage package)
     {
 
-
-        List<string> aotDllList = new List<string>
-        {
-            "UnityEngine.CoreModule.dll",
-            "mscorlib.dll",
-            "Cinemachine.dll",
+        // AOTGenericReferences.PatchedAOTAssemblyList
+        // List<string> aotDllList = new List<string>
+        // {
+        //     "UnityEngine.CoreModule.dll",
+        //     "mscorlib.dll",
+        //     "Cinemachine.dll",
             // // 核心运行时库
             // "mscorlib.dll",
             // "System.dll",
@@ -626,9 +339,9 @@ public class HotUpdateLoad : MonoBehaviour
             // // "Newtonsoft.Json.dll",                // JSON 序列化
             // // "protobuf-net.dll",                   // Protobuf
             // // "DOTween.dll",                        // DOTween 动画库
-        };
+        // };
 
-
+        var aotDllList = AOTGenericReferences.PatchedAOTAssemblyList;
         foreach (var aotDllName in aotDllList)
         {
             var dllHandle = package.LoadAssetAsync<TextAsset>(aotDllName);

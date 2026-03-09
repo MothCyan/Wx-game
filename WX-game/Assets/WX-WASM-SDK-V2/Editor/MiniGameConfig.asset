@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProjectConf:
     projectName: qwe21
-    Appid: wxf463d97f566037a7
+    Appid: wx3b6c3009e61d99cf
     CDN: http://192.168.100.121/ServerFile
     assetLoadType: 1
-    compressDataPackage: 0
+    compressDataPackage: 1
     VideoUrl: 
     relativeDST: D:/wxgame
     DST: D:/wxgame
@@ -26,7 +26,7 @@ MonoBehaviour:
     bundlePathIdentifier: yoo;
     bundleExcludeExtensions: json;version
     AssetsUrl: 
-    MemorySize: 256
+    MemorySize: 496
     HideAfterCallMain: 1
     preloadFiles: 
     Orientation: 0
@@ -52,9 +52,9 @@ MonoBehaviour:
     AutoProfile: 0
     ScriptOnly: 0
     Il2CppOptimizeSize: 0
-    profilingFuncs: 0
+    profilingFuncs: 1
     Webgl2: 1
-    fbslim: 0
+    fbslim: 1
     DeleteStreamingAssets: 1
     ProfilingMemory: 0
     CleanBuild: 0

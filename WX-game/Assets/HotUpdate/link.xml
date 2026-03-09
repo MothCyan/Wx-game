@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <!-- 热更新程序集完整保护 -->
+  <assembly fullname="Hotupdate" preserve="all">
+    <!-- FSM 系统 -->
+    <type fullname="State" preserve="all" />
+    <type fullname="StateType" preserve="all" />
+    <type fullname="EnemyType" preserve="all" />
+    <type fullname="FSM" preserve="all" />
+    <type fullname="StateManager" preserve="all" />
+    <type fullname="EnemyMove" preserve="all" />
+    
+    <!-- 玩家系统 -->
+    <type fullname="PlayerMove" preserve="all" />
+    <type fullname="PlayerAttack" preserve="all" />
+    <type fullname="PlayerController" preserve="all" />
+    <type fullname="PlayerEnemyDetection" preserve="all" />
+    
+    <!-- 敌人系统 -->
+    <type fullname="BaseEnemy" preserve="all" />
+    <type fullname="NormalEnemy" preserve="all" />
+    <type fullname="EnemyData" preserve="all" />
+    
+    <!-- 子弹系统 -->
+    <type fullname="NormalBullet" preserve="all" />
+    
+    <!-- 对象池系统 -->
+    <type fullname="IRecycle" preserve="all" />
+    <type fullname="BasePool" preserve="all" />
+    <type fullname="PoolManager" preserve="all" />
+    
+    <!-- 输入系统 -->
+    <type fullname="Joystick" preserve="all" />
+    
+    <!-- 基础系统 -->
+    <type fullname="GameRoot" preserve="all" />
+    <type fullname="BaseSingleton`1" preserve="all" />
+    <type fullname="Blackboard" preserve="all" />
+    <type fullname="IGenericField" preserve="all" />
+    <type fullname="GenericfField`1" preserve="all" />
+  </assembly>
+  
+  <!-- Unity 核心类型保护 -->
+  <assembly fullname="UnityEngine.CoreModule">
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Component" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.Vector2" preserve="all" />
+    <type fullname="UnityEngine.Vector3" preserve="all" />
+    <type fullname="UnityEngine.Quaternion" preserve="all" />
+    <type fullname="UnityEngine.Time" preserve="all" />
+    <type fullname="UnityEngine.Mathf" preserve="all" />
+    <type fullname="UnityEngine.Debug" preserve="all" />
+    <type fullname="UnityEngine.ScriptableObject" preserve="all" />
+    <type fullname="UnityEngine.Scripting.PreserveAttribute" preserve="all" />
+  </assembly>
+  
+  <!-- Physics2D 保护 -->
+  <assembly fullname="UnityEngine.Physics2DModule">
+    <type fullname="UnityEngine.Physics2D" preserve="all" />
+    <type fullname="UnityEngine.Collider2D" preserve="all" />
+  </assembly>
+  
+  <!-- YooAsset 保护 -->
+  <assembly fullname="YooAsset">
+    <type fullname="YooAsset.YooAssets" preserve="all" />
+    <type fullname="YooAsset.ResourcePackage" preserve="all" />
+    <type fullname="YooAsset.AssetHandle" preserve="all" />
+    <type fullname="YooAsset.HandleBase" preserve="all" />
+  </assembly>
+  
+  <!-- System 类型保护 -->
+  <assembly fullname="mscorlib">
+    <type fullname="System.Collections.Generic.Dictionary`2" preserve="all" />
+    <type fullname="System.Collections.Generic.Queue`1" preserve="all" />
+    <type fullname="System.Action`1" preserve="all" />
+    <type fullname="System.Func`2" preserve="all" />
+  </assembly>
+</linker>

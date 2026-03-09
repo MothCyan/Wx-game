@@ -1,0 +1,656 @@
+{
+    "FileVersion": "2025.9.30",
+    "EnableAddressable": true,
+    "SupportExtensionless": true,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "ReplaceAssetPathWithAddress": false,
+    "OutputNameStyle": 0,
+    "BuildBundleType": 1,
+    "BuildPipeline": "EditorSimulateBuildPipeline",
+    "PackageName": "MyPackage",
+    "PackageVersion": "Simulate",
+    "PackageNote": "2026/3/9 21:56:02",
+    "AssetList": [
+        {
+            "Address": "BatData",
+            "AssetPath": "Assets/HotUpdate/Data/EnemyData/BatData.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "NormalEnemyData",
+            "AssetPath": "Assets/HotUpdate/Data/EnemyData/NormalEnemyData.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "demo_tbitem",
+            "AssetPath": "Assets/HotUpdate/Data/JSON/demo_tbitem.json",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "skill_tbskill",
+            "AssetPath": "Assets/HotUpdate/Data/JSON/skill_tbskill.json",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "光柱 1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱/光柱 1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "光柱 2",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱/光柱 2.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "光柱 3",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱/光柱 3.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "光柱",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱/光柱.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "圣剑 1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑/圣剑 1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "圣剑 2",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑/圣剑 2.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "圣剑 3",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑/圣剑 3.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "圣剑",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑/圣剑.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "增伤1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/增伤1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "快速发射1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/子弹/快速发射1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "爆炸子弹",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/子弹/爆炸子弹.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "水魔法",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法/水魔法.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "水魔法1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法/水魔法1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "水魔法2",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法/水魔法2.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "水魔法3",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法/水魔法3.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "浪潮魔法",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法/浪潮魔法.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "浪潮魔法1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法/浪潮魔法1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "浪潮魔法2",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法/浪潮魔法2.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "浪潮魔法3",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法/浪潮魔法3.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "雷球 1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球/雷球 1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "雷球 2",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球/雷球 2.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "雷球 3",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球/雷球 3.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "雷球",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球/雷球.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/mscorlib.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Unity.InputSystem.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/Unity.InputSystem.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UnityEngine.CoreModule.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.CoreModule.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UnityEngine.Physics2DModule.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.Physics2DModule.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "YooAsset.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/YooAsset.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Hotupdate.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/Hotupdate.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "NormalBullet",
+            "AssetPath": "Assets/HotUpdate/Prefs/Bullet/NormalBullet.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 12,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "PongBullet",
+            "AssetPath": "Assets/HotUpdate/Prefs/Bullet/PongBullet.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 12,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Bat",
+            "AssetPath": "Assets/HotUpdate/Prefs/Enemy/Bat.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "NormalEnemy",
+            "AssetPath": "Assets/HotUpdate/Prefs/Enemy/NormalEnemy.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GameRoot",
+            "AssetPath": "Assets/HotUpdate/Prefs/GameRoot.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HurtText",
+            "AssetPath": "Assets/HotUpdate/Prefs/HurtText/HurtText.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "PoolManager",
+            "AssetPath": "Assets/HotUpdate/Prefs/Manager/PoolManager.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Pong1",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Pong1.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill1",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill1.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill10",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill10.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill11",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill11.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill12",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill12.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill2",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill2.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill3",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill3.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill4",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill4.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill5",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill5.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill6",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill6.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill7",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill7.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill8",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill8.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Skill9",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill9.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TestPanel",
+            "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TestPanel2",
+            "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel2.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TestScene",
+            "AssetPath": "Assets/HotUpdate/Scenes/TestScene.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "assets_hotupdate_data_enemydata.bundle",
+            "UnityCRC": 0,
+            "FileHash": "5e0ab8a252dc4a0fdfe213d4275a9070",
+            "FileCRC": 0,
+            "FileSize": 896,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_json.bundle",
+            "UnityCRC": 0,
+            "FileHash": "4805d1ea46d4fb5a6f5ad1724be3139b",
+            "FileCRC": 0,
+            "FileSize": 4543,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata.bundle",
+            "UnityCRC": 0,
+            "FileHash": "8c78bdd65bc252888a5cbfb85cd395cd",
+            "FileCRC": 0,
+            "FileSize": 736,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata_光柱.bundle",
+            "UnityCRC": 0,
+            "FileHash": "a75797be734ddc03f0507ed093d7751c",
+            "FileCRC": 0,
+            "FileSize": 3281,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata_圣剑.bundle",
+            "UnityCRC": 0,
+            "FileHash": "d589a52fdda911e72a191957ea9abda6",
+            "FileCRC": 0,
+            "FileSize": 3303,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata_子弹.bundle",
+            "UnityCRC": 0,
+            "FileHash": "66131d0b307d16fd24f3478dac68e9fa",
+            "FileCRC": 0,
+            "FileSize": 1598,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata_水魔法.bundle",
+            "UnityCRC": 0,
+            "FileHash": "49f6ebe58814f3fe363643673c55e5f5",
+            "FileCRC": 0,
+            "FileSize": 3299,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata_浪潮魔法.bundle",
+            "UnityCRC": 0,
+            "FileHash": "ed9f5990ede0dbaf1ddeda71bcb5a333",
+            "FileCRC": 0,
+            "FileSize": 3409,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata_雷球.bundle",
+            "UnityCRC": 0,
+            "FileHash": "ccaf83c5695849d09b548f8b5409ee02",
+            "FileCRC": 0,
+            "FileSize": 3201,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_dll.bundle",
+            "UnityCRC": 0,
+            "FileHash": "75ddaa04892c39eb87904fffaaa8e4d8",
+            "FileCRC": 0,
+            "FileSize": 15360,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_dll_aot.bundle",
+            "UnityCRC": 0,
+            "FileHash": "ed6aa2011dce0bc5ca691f42d889f15f",
+            "FileCRC": 0,
+            "FileSize": 3947008,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs.bundle",
+            "UnityCRC": 0,
+            "FileHash": "ec0125cfe1e5388716359ea217e1bfa5",
+            "FileCRC": 0,
+            "FileSize": 1350,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_bullet.bundle",
+            "UnityCRC": 0,
+            "FileHash": "c0535eb4d597830c6d54cd53359a3f76",
+            "FileCRC": 0,
+            "FileSize": 10402,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_enemy.bundle",
+            "UnityCRC": 0,
+            "FileHash": "42b19d8acd152a5b453a0b2387d14288",
+            "FileCRC": 0,
+            "FileSize": 11812,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_hurttext.bundle",
+            "UnityCRC": 0,
+            "FileHash": "2415afb43c4d04f1ab454f2d38312f0c",
+            "FileCRC": 0,
+            "FileSize": 7319,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_manager.bundle",
+            "UnityCRC": 0,
+            "FileHash": "5aa918d2a8f8d3e8370d03632d990047",
+            "FileCRC": 0,
+            "FileSize": 1353,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_skill.bundle",
+            "UnityCRC": 0,
+            "FileHash": "e89f1fda5cc3ba401e95743d0e123aa7",
+            "FileCRC": 0,
+            "FileSize": 51631,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_ui.bundle",
+            "UnityCRC": 0,
+            "FileHash": "77e42f9b871115fd659ed000c358f793",
+            "FileCRC": 0,
+            "FileSize": 12111,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_scenes.bundle",
+            "UnityCRC": 0,
+            "FileHash": "452104722e6e3b57e8e86af4e9235699",
+            "FileCRC": 0,
+            "FileSize": 49321,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        }
+    ]
+}

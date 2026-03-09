@@ -1,0 +1,3336 @@
+{
+    "Summary": {
+        "YooVersion": "2.3.18",
+        "UnityVersion": "2022.3.62f2c1",
+        "BuildDate": "2026/3/8 22:06:31",
+        "BuildSeconds": 6,
+        "BuildTarget": 20,
+        "BuildPipeline": "ScriptableBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "MyPackage",
+        "BuildPackageVersion": "2026-03-08-1326",
+        "BuildPackageNote": "2026/3/8 22:06:23",
+        "UniqueBundleName": false,
+        "EnableAddressable": true,
+        "SupportExtensionless": true,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": true,
+        "UseAssetDependencyDB": false,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionServicesClassName": "YooAsset.Editor.EncryptionNone",
+        "ManifestProcessServicesClassName": "YooAsset.Editor.ManifestProcessNone",
+        "ManifestRestoreServicesClassName": "YooAsset.Editor.ManifestRestoreNone",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "ReplaceAssetPathWithAddress": false,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "unityshaders.bundle",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 236,
+        "MainAssetTotalCount": 41,
+        "AllBundleTotalCount": 36,
+        "AllBundleTotalSize": 11503704,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "BatData",
+            "AssetPath": "Assets/HotUpdate/Data/EnemyData/BatData.asset",
+            "AssetGUID": "5b76bcff790bdd748b184e44d098d1ca",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_enemydata.bundle",
+            "MainBundleSize": 1917,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "NormalEnemyData",
+            "AssetPath": "Assets/HotUpdate/Data/EnemyData/NormalEnemyData.asset",
+            "AssetGUID": "4095efc5bfdef8f459209fc63875eec1",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_enemydata.bundle",
+            "MainBundleSize": 1917,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "demo_tbitem",
+            "AssetPath": "Assets/HotUpdate/Data/JSON/demo_tbitem.json",
+            "AssetGUID": "3e7805979edc2ff4582ab9bb11e8af78",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_json.bundle",
+            "MainBundleSize": 1677,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "skill_tbskill",
+            "AssetPath": "Assets/HotUpdate/Data/JSON/skill_tbskill.json",
+            "AssetGUID": "a3a7322b2d554104b880e3fa4ac2ee06",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_json.bundle",
+            "MainBundleSize": 1677,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "光柱",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱.asset",
+            "AssetGUID": "2efee2c0061c98d459ff12da6245f84d",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Aseprite (Raw)/SwordOfJustice.aseprite",
+                    "AssetGUID": "1c850a4efee19994ab69a0ae1863d2b3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "圣剑",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑.asset",
+            "AssetGUID": "cadd1c5a43a314d4dbd780625716eae0",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Aseprite (Raw)/SwordOfJustice.aseprite",
+                    "AssetGUID": "1c850a4efee19994ab69a0ae1863d2b3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "增伤1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/增伤1.asset",
+            "AssetGUID": "fab1839fc14ab274b897b699fddfc5c7",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolySlash_C/Frames/HolySlash_C_02.png",
+                    "AssetGUID": "cb2dab411d7a06b40910fff6caea5ed9"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyslash_c_frames.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "快速发射1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/快速发射1.asset",
+            "AssetGUID": "d68d6e92d4bd5ba4cbc95c4f0e5878a2",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_0.png",
+                    "AssetGUID": "a27fd3228d12ff74cb032085b18fbd7c"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_bullet_minipack_1.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "水魔法",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法.asset",
+            "AssetGUID": "d4b062d3c1df94a4ba929f08b26003b2",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/00.png",
+                    "AssetGUID": "8b8b32438cd25a54b8ee600c9719bf3c"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "浪潮魔法",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法.asset",
+            "AssetGUID": "db4c5475cebfa104a95a252ac303e1be",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/00.png",
+                    "AssetGUID": "8b8b32438cd25a54b8ee600c9719bf3c"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "爆炸子弹",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/爆炸子弹.asset",
+            "AssetGUID": "9036416853d932044be7d79504221cd7",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/Bullet/Explosions pack/explosion-1-g/Sprites/frame4.png",
+                    "AssetGUID": "126b656f846c9794a8ebaa6e276b2a70"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_bullet_explosions_pack_explosion-1-g_sprites.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "雷球",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球.asset",
+            "AssetGUID": "fc4a88764d210f149a811ea56154310f",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_data_skilldata.bundle",
+            "MainBundleSize": 3217,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/16.png",
+                    "AssetGUID": "e69fdde377e9cf64b822c63f18be1f4a"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_art_effects_pack_14_1.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/mscorlib.dll.bytes",
+            "AssetGUID": "e62a9e361be6c134e87a14e6c5d5801f",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1794206,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Unity.InputSystem.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/Unity.InputSystem.dll.bytes",
+            "AssetGUID": "26ce6ccd702c1ce468c435a05f8fe9c0",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1794206,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "UnityEngine.CoreModule.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.CoreModule.dll.bytes",
+            "AssetGUID": "e6d4a608b0578434ab2042def44842fb",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1794206,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "UnityEngine.Physics2DModule.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.Physics2DModule.dll.bytes",
+            "AssetGUID": "e968b1c4499041c41a167216876745f3",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1794206,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "YooAsset.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/YooAsset.dll.bytes",
+            "AssetGUID": "5ac4e61ae60f41e4e9c22da207e8daf8",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll_aot.bundle",
+            "MainBundleSize": 1794206,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Hotupdate.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/Hotupdate.dll.bytes",
+            "AssetGUID": "200958c14fb08b146bab69da7d265c7b",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_dll.bundle",
+            "MainBundleSize": 10270,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "NormalBullet",
+            "AssetPath": "Assets/HotUpdate/Prefs/Bullet/NormalBullet.prefab",
+            "AssetGUID": "27d06b3f9880cc640b72b291e7dc36b3",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_bullet.bundle",
+            "MainBundleSize": 5493,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Bullet.anim",
+                    "AssetGUID": "ffe1f13d39d9de64489c21aeb5ad1cee"
+                },
+                {
+                    "AssetPath": "Assets/Animation/NormalBullet.controller",
+                    "AssetGUID": "3edee1bf9f2896045b30fb49e4bacb86"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_0.png",
+                    "AssetGUID": "a27fd3228d12ff74cb032085b18fbd7c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_1.png",
+                    "AssetGUID": "6c1da4ea63a87a1469af6e4cdc4435ec"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_10.png",
+                    "AssetGUID": "f54abff29c684574f9f27f078da4479f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_11.png",
+                    "AssetGUID": "b5becfe4e1cd60a4383ef5e288c17f0b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_12.png",
+                    "AssetGUID": "aeac71cfceda34e42af70c0426fcc56b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_13.png",
+                    "AssetGUID": "1ccd5f91b5542d449a8eab0bae0f512f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_14.png",
+                    "AssetGUID": "7097c0ee118eb264aa8fc0945e61e76d"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_2.png",
+                    "AssetGUID": "de19e8f0e8b5eda43ac2ca67c2d25cda"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_3.png",
+                    "AssetGUID": "bfe77a3c3686449418d692c88f33c5ed"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_4.png",
+                    "AssetGUID": "150d4e9225ee62b4ab4e659b81ccf84f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_5.png",
+                    "AssetGUID": "2aca77c6604f0b842a080ce6691b8920"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_6.png",
+                    "AssetGUID": "7714c26db57b9674e9eadafa81132c5a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_7.png",
+                    "AssetGUID": "0ad3006765d370b42a60b6532cd022c4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_8.png",
+                    "AssetGUID": "b4fc6a12bbec50b469985ab506342cb5"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_9.png",
+                    "AssetGUID": "6eed2e4df0b519b4192b8a7d59e37b61"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "PongBullet",
+            "AssetPath": "Assets/HotUpdate/Prefs/Bullet/PongBullet.prefab",
+            "AssetGUID": "ebf742bd7c1ef6c4889d7261337d4682",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_bullet.bundle",
+            "MainBundleSize": 5493,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/PongBullet.anim",
+                    "AssetGUID": "dfc0c23f0ecb92f4a90be9bc71acf811"
+                },
+                {
+                    "AssetPath": "Assets/Animation/PongBullet.controller",
+                    "AssetGUID": "e2b94674bf8f5b34b994c3afb0e9c653"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_0.png",
+                    "AssetGUID": "130ecbdafc2f10a44a42b76b22f3b2dd"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_1.png",
+                    "AssetGUID": "2df6d90b0b6d1c74db6a8a2379fabc9e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_10.png",
+                    "AssetGUID": "831f1e8532099734f825f1fc09314ee3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_11.png",
+                    "AssetGUID": "bd8651fb6115f8843b45ff5d575180f7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_12.png",
+                    "AssetGUID": "1ee87af9676ae574287d43e8edfe2f95"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_13.png",
+                    "AssetGUID": "f3ca76ba32d6ea240b83e23c8e62a570"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_14.png",
+                    "AssetGUID": "f7c942f59332bd64591c23c8c2a9d097"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_2.png",
+                    "AssetGUID": "7f463dc2d35508c4ab5a85af42e86bab"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_3.png",
+                    "AssetGUID": "b6cb611a07a74384b865d70051609012"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_4.png",
+                    "AssetGUID": "2713c73eefe3f374ab076eb0af27155e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_5.png",
+                    "AssetGUID": "5fa2da143dad64646a3e5fb30bcc21ba"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_6.png",
+                    "AssetGUID": "21a50fcf4b38d604e9d3dc7e1c803cb7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_7.png",
+                    "AssetGUID": "126126038c110644fb11cc9c5532d2ae"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_8.png",
+                    "AssetGUID": "3abde2d08271d4e44b428dd85926ebb3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_9.png",
+                    "AssetGUID": "9d2987df8cd5f6543a5f239e859adc97"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_minipack_2.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Bat",
+            "AssetPath": "Assets/HotUpdate/Prefs/Enemy/Bat.prefab",
+            "AssetGUID": "0a67c3bfc97cef149931ccc522a4c50f",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_enemy.bundle",
+            "MainBundleSize": 5895,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Bat.anim",
+                    "AssetGUID": "3051849b5d120fb4ebfda1171f57b66d"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Bat.controller",
+                    "AssetGUID": "ae3f4e0f08a4e134ba124a470b8b0d50"
+                },
+                {
+                    "AssetPath": "Assets/Art/Enemy/Enemy_Single_Winter_Canines/Bat_Fly.png",
+                    "AssetGUID": "7f20c381482fbda44ad20e943f0b178e"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/EnemyData/BatData.asset",
+                    "AssetGUID": "5b76bcff790bdd748b184e44d098d1ca"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "assets_hotupdate_data_enemydata.bundle",
+                "share_assets_animation.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "NormalEnemy",
+            "AssetPath": "Assets/HotUpdate/Prefs/Enemy/NormalEnemy.prefab",
+            "AssetGUID": "586eb8d05a667ea47b2525ce4867f59b",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_enemy.bundle",
+            "MainBundleSize": 5895,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/NormalEnemy.anim",
+                    "AssetGUID": "bf80fceccc995ab4bb45dfdac9095322"
+                },
+                {
+                    "AssetPath": "Assets/Animation/NormalEnemy.controller",
+                    "AssetGUID": "0207dcb4e686f1f42a5fdc91261a3442"
+                },
+                {
+                    "AssetPath": "Assets/Art/Enemy/Enemy_Single_Winter_Canines/Canines/Canine_White_Run.png",
+                    "AssetGUID": "1b13c9e1069a3d545926e26746a8991e"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/EnemyData/NormalEnemyData.asset",
+                    "AssetGUID": "4095efc5bfdef8f459209fc63875eec1"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "assets_hotupdate_data_enemydata.bundle",
+                "share_assets_animation.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "GameRoot",
+            "AssetPath": "Assets/HotUpdate/Prefs/GameRoot.prefab",
+            "AssetGUID": "109fd19218b073442aa97d33097f1709",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs.bundle",
+            "MainBundleSize": 2317,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "HurtText",
+            "AssetPath": "Assets/HotUpdate/Prefs/HurtText/HurtText.prefab",
+            "AssetGUID": "007fbdd688bf2704986997d956158219",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_hurttext.bundle",
+            "MainBundleSize": 6985,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/HurtText.anim",
+                    "AssetGUID": "0f87d55aa6ccba148a8386740073b7ad"
+                },
+                {
+                    "AssetPath": "Assets/Animation/HurtText.controller",
+                    "AssetGUID": "2eb80a930f97cc24a8cbb281878c0940"
+                },
+                {
+                    "AssetPath": "Assets/Art/Font/LuoLITi SDF.asset",
+                    "AssetGUID": "373a8c894c7d4c64590c26e94ad7b366"
+                },
+                {
+                    "AssetPath": "Assets/Art/Font/LuoLITi.ttf",
+                    "AssetGUID": "20ed8b12022a37748bf2b73de6e7b0b4"
+                },
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+                    "AssetGUID": "68e6db2ebdc24f95958faec2be5558d6"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_font.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "PoolManager",
+            "AssetPath": "Assets/HotUpdate/Prefs/Manager/PoolManager.prefab",
+            "AssetGUID": "1d00fa281298f0945863d25ce793e3bf",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_manager.bundle",
+            "MainBundleSize": 2350,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Pong1",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Pong1.prefab",
+            "AssetGUID": "ee2938214734d9a42a0a41a9dbc913a9",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Pong.controller",
+                    "AssetGUID": "10eec9293842dd44294766beb1c79ba1"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Pong1.anim",
+                    "AssetGUID": "24089bde898c2cc44a5e0f7a78c0b0c3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/Explosions pack/explosion-1-g/spritesheet.png",
+                    "AssetGUID": "7950a49b7ed52a34094e6a9242b553eb"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill1",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill1.prefab",
+            "AssetGUID": "ec9b4b9879dae4c479eb006db95450a1",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Circle.controller",
+                    "AssetGUID": "0530a2ef3d11d344b8c104028ced0788"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill1.anim",
+                    "AssetGUID": "94b79a7a6cc8e6e4abd55bcd37952f59"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/00.png",
+                    "AssetGUID": "8b8b32438cd25a54b8ee600c9719bf3c"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill10",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill10.prefab",
+            "AssetGUID": "3bd5aac95c83be248b40036e0ed6c4c1",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill10.anim",
+                    "AssetGUID": "133c388505d3abf418e473c70b0eccb4"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill10.controller",
+                    "AssetGUID": "83c108ec89b499e409910daa934a7dcf"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_01.png",
+                    "AssetGUID": "cfbb999d817c3bc438c7a19fe7764ecd"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_02.png",
+                    "AssetGUID": "5091493ec0fd5374d940767bad500586"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_03.png",
+                    "AssetGUID": "4fe37a5eb9f167a4bafad0d02c7a2f8e"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_04.png",
+                    "AssetGUID": "d1c277f784f57fe46a45bc521f7b3f16"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_05.png",
+                    "AssetGUID": "a2de7e361f5076e4b9a7fa54e8654ea3"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_06.png",
+                    "AssetGUID": "72ba10c3da271844a916cacc030708f4"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_07.png",
+                    "AssetGUID": "9cc7550399dbec9479c74e06e74609fc"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_08.png",
+                    "AssetGUID": "a51e3f8539aadf74f9eef68b09fc77ed"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_09.png",
+                    "AssetGUID": "f9ac78c20b73c864e8cd7a6fadee2afe"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_10.png",
+                    "AssetGUID": "64b471e22697ac543a583f4480925e13"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_11.png",
+                    "AssetGUID": "c2f6e7cf5c373914aae4e55e7227184a"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill11",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill11.prefab",
+            "AssetGUID": "fa34ac5191a9175468487d8cf238b420",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill11.anim",
+                    "AssetGUID": "bdf0b0823e1cf5c478368ec6d3ae9909"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill11.controller",
+                    "AssetGUID": "c9f7032ea15910c47994cfa2e461207b"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_01.png",
+                    "AssetGUID": "218069f7821e85841ad163e5ad1bf7b8"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_02.png",
+                    "AssetGUID": "70b4e0ffc5a967e419a9b465545b7562"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_03.png",
+                    "AssetGUID": "18d65446be8544a4eb0c7a84f88373bf"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_04.png",
+                    "AssetGUID": "18199fc549c6a2a4fb4e490029f7d197"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_05.png",
+                    "AssetGUID": "49bd3573ba68f6148880fd2b09c31c6d"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_06.png",
+                    "AssetGUID": "1ca21526314d68544b479bd12280f613"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_07.png",
+                    "AssetGUID": "198bbed3a88df1a4f806da88e2215c38"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_08.png",
+                    "AssetGUID": "583b65232ea24a64eaf274b128a5f7b1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_09.png",
+                    "AssetGUID": "8d63b662408689c4c87856f194372c7c"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_10.png",
+                    "AssetGUID": "d18aa97a4bac1954eba74c65c707d2a1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_11.png",
+                    "AssetGUID": "36f43983fea6d384985daf392c7e607e"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill12",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill12.prefab",
+            "AssetGUID": "8fab48ba6f554a5479dfd7486b797ead",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill12.anim",
+                    "AssetGUID": "021f6edb45dec444e95bd154d109ba60"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill12.controller",
+                    "AssetGUID": "f8ce5bccd8df9be45bc46c7c90063427"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/1.png",
+                    "AssetGUID": "e6af530d1f3b3454dab7c1d602d0d0a7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/10.png",
+                    "AssetGUID": "a0bea52b5d7cab3488775b9752b23bb4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/11.png",
+                    "AssetGUID": "c44ccb936814d7949b4e47b7d2d30b63"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/12.png",
+                    "AssetGUID": "7b09149ad5d0fba49ade3b4ad8e41d05"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/13.png",
+                    "AssetGUID": "0186dc8aec1ef6b40812ae7c06396e77"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/14.png",
+                    "AssetGUID": "e33e5a5806f43fe47b254d194c73b9b4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/15.png",
+                    "AssetGUID": "dfea49d176990fa409638ff223d110a5"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/16.png",
+                    "AssetGUID": "e69fdde377e9cf64b822c63f18be1f4a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/17.png",
+                    "AssetGUID": "8a6afc213b4869346b2773d2b01e7b2e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/18.png",
+                    "AssetGUID": "8171c01eabb99394990c5fddb3f7f901"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/19.png",
+                    "AssetGUID": "90807000209ab1c429cf34c2f1775072"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/2.png",
+                    "AssetGUID": "c93f42c290e244848bfdab4dbe81ac91"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/20.png",
+                    "AssetGUID": "1c53e4f96e50e8d4c86d57b23e1db6bb"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/21.png",
+                    "AssetGUID": "6fbde6e3c93815a4eb14379c68e16037"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/22.png",
+                    "AssetGUID": "2b6c40e1b869b0d4798b5672058a52a9"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/23.png",
+                    "AssetGUID": "6b8ec5ddc8dc99e46b9b05e61c52b20b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/24.png",
+                    "AssetGUID": "d6c9faad0e0597b43a0284a4a389a599"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/25.png",
+                    "AssetGUID": "d73d6166bf1b3564baf0c229e56a8eef"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/26.png",
+                    "AssetGUID": "efe5ee206e7d43c4fb7e4b6d83b56b6c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/27.png",
+                    "AssetGUID": "5212b6ae3df10404baf543cb40e25841"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/28.png",
+                    "AssetGUID": "bbc32d8b6b5b29f47ae2a554d4f91d5b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/29.png",
+                    "AssetGUID": "f726300cea36d5d40b2e3dd6ce01d4fb"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/3.png",
+                    "AssetGUID": "ee246a080ff212844ad2170bd3aea8c8"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/30.png",
+                    "AssetGUID": "be9ce147e557f374bb25c0c7a7e11798"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/31.png",
+                    "AssetGUID": "62673dea57991094094147a5acefb702"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/32.png",
+                    "AssetGUID": "bfc0a4ce06e28ff47b0981ea27f9341e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/33.png",
+                    "AssetGUID": "77d407da5ad631248865cfffefd758e9"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/34.png",
+                    "AssetGUID": "17651745fe326b843b63f00e0dfd9cbb"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/35.png",
+                    "AssetGUID": "962eda7c81c9419458853d9d606fcaef"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/36.png",
+                    "AssetGUID": "6e5716017e95fe34e8dd0e1cbf326c91"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/37.png",
+                    "AssetGUID": "b211f0af8384ec04680999bb1f752c4b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/38.png",
+                    "AssetGUID": "add8cb01842e81042b5d0883d7061dbd"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/39.png",
+                    "AssetGUID": "c0254802a3e608f4090cc06b196a1b6b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/4.png",
+                    "AssetGUID": "f98e66e69cef8514ebf146f0a0f65d56"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/40.png",
+                    "AssetGUID": "3b1847ea7a27f7840832eadc7a65a8b8"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/41.png",
+                    "AssetGUID": "ecdbf68d396ba1d4e8edaa52141628e6"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/42.png",
+                    "AssetGUID": "a007b019613cfdd41aadff1c53531280"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/43.png",
+                    "AssetGUID": "45ff8a4e738380443ac9b75134feff5a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/44.png",
+                    "AssetGUID": "ea811ea5e7d2a2640a1117d394032e0a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/45.png",
+                    "AssetGUID": "f3431b78bbbb3fe44952dc7618f73889"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/46.png",
+                    "AssetGUID": "525bb480ff8001340b6b100c6ca886a7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/47.png",
+                    "AssetGUID": "4fce66df2f97f6145b84309b1e3f6615"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/48.png",
+                    "AssetGUID": "f84a0d20717856046963670c83d1e91d"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/49.png",
+                    "AssetGUID": "4426114cd7aba074ca61200463bac04b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/5.png",
+                    "AssetGUID": "77015e7c0338222498387b962e6a373e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/50.png",
+                    "AssetGUID": "f7a592efa9c4b0346853441020f482d2"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/51.png",
+                    "AssetGUID": "c9f37be86c28f664e8f64d49516803d8"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/52.png",
+                    "AssetGUID": "519d62e10603e0e4ca9768c845de1bc4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/53.png",
+                    "AssetGUID": "a8d0c137528562d42be3d5088bf5e496"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/54.png",
+                    "AssetGUID": "edf1bb968326ace4b8dba5fa7d866771"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/55.png",
+                    "AssetGUID": "7d897719fbeca094ea5f6854d1cdc62f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/56.png",
+                    "AssetGUID": "e06c1af342cc9ae49a09ae82449f28ab"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/57.png",
+                    "AssetGUID": "1bc2d9bc386bf9c4aa4267805490895b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/58.png",
+                    "AssetGUID": "813b9aa39e6c1694c91ce03195e67db6"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/59.png",
+                    "AssetGUID": "b95c7ebc67293d04eb9c31967c509546"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/6.png",
+                    "AssetGUID": "5d1edfe6b49e0a14a9aa6bb9e96b6a01"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/60.png",
+                    "AssetGUID": "9d40770fe155d8047a8efb04a1f223f3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/7.png",
+                    "AssetGUID": "f9dcd263a47fb29419c158c495300d7c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/8.png",
+                    "AssetGUID": "87a2b27a2e9ff1a47aee0d70654391ee"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/9.png",
+                    "AssetGUID": "00d4da6aac7d89741bee6fe191fd3fca"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill2",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill2.prefab",
+            "AssetGUID": "6899405406ccfa244a04565b4609d7ac",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill2.anim",
+                    "AssetGUID": "7584b00c172bb6d4aac4e6e56a5f0cec"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill2.controller",
+                    "AssetGUID": "06e07877807a95c40842a50906498bb7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/00.png",
+                    "AssetGUID": "8b8b32438cd25a54b8ee600c9719bf3c"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill3",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill3.prefab",
+            "AssetGUID": "a4b5d356d36b6934c93e29476b64c15a",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill3.anim",
+                    "AssetGUID": "c048461047cc27949b6ddf3415311fb6"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill3.controller",
+                    "AssetGUID": "1b5541633bdbc2742b492c218e3eb142"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/00.png",
+                    "AssetGUID": "8b8b32438cd25a54b8ee600c9719bf3c"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill4",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill4.prefab",
+            "AssetGUID": "ce668c7d9f6838040b1feff542f5af5d",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill4.anim",
+                    "AssetGUID": "f08f8cd868812714dbc13a97de9fec6b"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill4.controller",
+                    "AssetGUID": "314ddaee43b41f5408a7f25d7bdc682a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/01.png",
+                    "AssetGUID": "724ddc097289cc243bccaf73ba024c14"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill5",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill5.prefab",
+            "AssetGUID": "e324a5b5a37aee44698011d865cb35f5",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill5.anim",
+                    "AssetGUID": "50d42bb034c8c8144b97ae59862b1ea3"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill5.controller",
+                    "AssetGUID": "21061005ee1ff5749963339aa76cf703"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/01.png",
+                    "AssetGUID": "724ddc097289cc243bccaf73ba024c14"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill6",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill6.prefab",
+            "AssetGUID": "61886673589326f47b67bcd4d6f36e74",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill6.anim",
+                    "AssetGUID": "5f68789e6ce39c443a25c017166e5d83"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill6.controller",
+                    "AssetGUID": "0d37104d10901644abc996fc5d0f3774"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/01.png",
+                    "AssetGUID": "724ddc097289cc243bccaf73ba024c14"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill7",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill7.prefab",
+            "AssetGUID": "692a9c46c23dd434bb7d885e2bd3ff09",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill7.anim",
+                    "AssetGUID": "6585e77a03ee51b4abaaeb033ed48ceb"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill7.controller",
+                    "AssetGUID": "4b2dd39303c02724695fd9edbe6766da"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/01.png",
+                    "AssetGUID": "724ddc097289cc243bccaf73ba024c14"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill8",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill8.prefab",
+            "AssetGUID": "5536c9acbf67a5c4c9517ce712a6be18",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill8.anim",
+                    "AssetGUID": "7dd4b146014d73e458e7c3d17886644c"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill8.controller",
+                    "AssetGUID": "89762d8631cf13f4f9191669cc2770db"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_01.png",
+                    "AssetGUID": "e0b2527b991b2ba4fb5fdfd496edde00"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_02.png",
+                    "AssetGUID": "115a62d208a080f4c973c242ad768954"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_03.png",
+                    "AssetGUID": "fc08f14d3252d364e86098f03ebe9ffa"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_04.png",
+                    "AssetGUID": "8d2e734a015560e459533364487a3d4a"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_05.png",
+                    "AssetGUID": "916f8e52298fc7a428348f45b3108ef7"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_06.png",
+                    "AssetGUID": "4a5dd6a1c18500b41ad9b9cb9245d592"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_07.png",
+                    "AssetGUID": "4a687202164b17d4d953808d7ed7dc0f"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_08.png",
+                    "AssetGUID": "0ed2a0792d4e4364194efff9e3b6e45a"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_09.png",
+                    "AssetGUID": "bce175d51fc14374287e4a2ab8b35eb4"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_10.png",
+                    "AssetGUID": "4f7427b12f787384b953332f8cbacc49"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_11.png",
+                    "AssetGUID": "9f4cb03fbd0802341906ad7f465e2be1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_12.png",
+                    "AssetGUID": "295f269f9b59f244c9b9225685c2ff49"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "Skill9",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill9.prefab",
+            "AssetGUID": "9c7d85e288669834b86a030a6af56671",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_skill.bundle",
+            "MainBundleSize": 8364,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Skill9.anim",
+                    "AssetGUID": "ec17e30c9a3a8d749a6734909c51580a"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill9.controller",
+                    "AssetGUID": "46da3582eb0e820439cc3dd94ad2daaf"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_01.png",
+                    "AssetGUID": "ce1c3bba133ba604481c7b3e900f2648"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_02.png",
+                    "AssetGUID": "c228417ce4c771c458bf7298effdda31"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_03.png",
+                    "AssetGUID": "e6993335d9304504092289996e37f4d1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_04.png",
+                    "AssetGUID": "b9c01fe76ad168b4b81620c3c8ab0409"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_05.png",
+                    "AssetGUID": "b1ed17320c26ef642b4afde7ae0f7eff"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_06.png",
+                    "AssetGUID": "da902bd1627e548448b326521e2aa314"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_07.png",
+                    "AssetGUID": "cb82647214412254eb6e3a1a238e474d"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_08.png",
+                    "AssetGUID": "64e9ac5bfe7a3cc49bd9ad6d48d0ceeb"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_09.png",
+                    "AssetGUID": "8e1e3c620ec849a46a44ab07ddb852aa"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_10.png",
+                    "AssetGUID": "06e1f326b9d9a214c90b9afb32ffc826"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_11.png",
+                    "AssetGUID": "fe12fab9113b3bb42b362ee7800951df"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_12.png",
+                    "AssetGUID": "0c1e072790d2d61468268c48e088f1f3"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_13.png",
+                    "AssetGUID": "9d51451d6167ede40b3d7b980648b296"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "TestPanel",
+            "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel.prefab",
+            "AssetGUID": "5b6120f211459e148b116d2f9bf7b5b4",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_ui.bundle",
+            "MainBundleSize": 11595,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+                    "AssetGUID": "e3265ab4bf004d28a9537516768c1c75"
+                },
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+                    "AssetGUID": "2e498d1c8094910479dc3e1b768306a4"
+                },
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                    "AssetGUID": "8f586378b4e144a9851e7b34d9b748ee"
+                },
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+                    "AssetGUID": "fe393ace9b354375a9cb14cdbbc28be4"
+                }
+            ],
+            "DependBundles": [
+                "share_assets_textmesh_pro_fonts.bundle",
+                "share_assets_textmesh_pro_resources_fonts_&_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "TestPanel2",
+            "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel2.prefab",
+            "AssetGUID": "ff5a3c91d39790d4190c6ae6a9fad967",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_prefs_ui.bundle",
+            "MainBundleSize": 11595,
+            "DependAssets": [],
+            "DependBundles": [
+                "unityshaders.bundle"
+            ]
+        },
+        {
+            "Address": "TestScene",
+            "AssetPath": "Assets/HotUpdate/Scenes/TestScene.unity",
+            "AssetGUID": "5c5f48dc3eb351a42bea0fabc95d0eb0",
+            "AssetTags": [],
+            "MainBundleName": "assets_hotupdate_scenes.bundle",
+            "MainBundleSize": 19369,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/Animation/Player.controller",
+                    "AssetGUID": "570dacf762e4ec14fa9d5bb9c26be13b"
+                },
+                {
+                    "AssetPath": "Assets/Animation/PlayerIdle.anim",
+                    "AssetGUID": "6e714af1ee1cf8d45a4fbf08585b84d0"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/Explosions pack/explosion-1-g/Sprites/frame4.png",
+                    "AssetGUID": "126b656f846c9794a8ebaa6e276b2a70"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_0.png",
+                    "AssetGUID": "a27fd3228d12ff74cb032085b18fbd7c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/16.png",
+                    "AssetGUID": "e69fdde377e9cf64b822c63f18be1f4a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Normal/4e517e8154573099f12b377a1b5a3e38.png",
+                    "AssetGUID": "a79391742a0dfa245905ed215079a3f1"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/00.png",
+                    "AssetGUID": "8b8b32438cd25a54b8ee600c9719bf3c"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolySlash_C/Frames/HolySlash_C_02.png",
+                    "AssetGUID": "cb2dab411d7a06b40910fff6caea5ed9"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Aseprite (Raw)/SwordOfJustice.aseprite",
+                    "AssetGUID": "1c850a4efee19994ab69a0ae1863d2b3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Player/Necromancer_creativekind-Sheet.png",
+                    "AssetGUID": "98ac7703e6fd2bb49ae6780a685cd04a"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱.asset",
+                    "AssetGUID": "2efee2c0061c98d459ff12da6245f84d"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑.asset",
+                    "AssetGUID": "cadd1c5a43a314d4dbd780625716eae0"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/增伤1.asset",
+                    "AssetGUID": "fab1839fc14ab274b897b699fddfc5c7"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/快速发射1.asset",
+                    "AssetGUID": "d68d6e92d4bd5ba4cbc95c4f0e5878a2"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法.asset",
+                    "AssetGUID": "d4b062d3c1df94a4ba929f08b26003b2"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法.asset",
+                    "AssetGUID": "db4c5475cebfa104a95a252ac303e1be"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/爆炸子弹.asset",
+                    "AssetGUID": "9036416853d932044be7d79504221cd7"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球.asset",
+                    "AssetGUID": "fc4a88764d210f149a811ea56154310f"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Manager/PoolManager.prefab",
+                    "AssetGUID": "1d00fa281298f0945863d25ce793e3bf"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions",
+                    "AssetGUID": "ca9f5fa95ffab41fb9a615ab714db018"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ],
+            "DependBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_prefs_manager.bundle",
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g_sprites.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_normal.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyslash_c_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+                "share_assets_art_player.bundle",
+                "share_packages_com_unity_inputsystem_inputsystem_plugins_playerinput.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ]
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_hotupdate_data_enemydata.bundle",
+            "FileName": "700a434ef3f6a55821dc39f8eb45c02d.bundle",
+            "FileHash": "700a434ef3f6a55821dc39f8eb45c02d",
+            "FileCRC": 860036802,
+            "FileSize": 1917,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_enemy.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/EnemyData/BatData.asset",
+                    "AssetGUID": "5b76bcff790bdd748b184e44d098d1ca"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/EnemyData/NormalEnemyData.asset",
+                    "AssetGUID": "4095efc5bfdef8f459209fc63875eec1"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_data_json.bundle",
+            "FileName": "1afa00494b2242002dcd694f4dfa3a15.bundle",
+            "FileHash": "1afa00494b2242002dcd694f4dfa3a15",
+            "FileCRC": 2228052662,
+            "FileSize": 1677,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/JSON/demo_tbitem.json",
+                    "AssetGUID": "3e7805979edc2ff4582ab9bb11e8af78"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/JSON/skill_tbskill.json",
+                    "AssetGUID": "a3a7322b2d554104b880e3fa4ac2ee06"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata.bundle",
+            "FileName": "f9facaa63abdf0e93028fa842af2fc07.bundle",
+            "FileHash": "f9facaa63abdf0e93028fa842af2fc07",
+            "FileCRC": 3544762849,
+            "FileSize": 3217,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_art_bullet_explosions_pack_explosion-1-g_sprites.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyslash_c_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱.asset",
+                    "AssetGUID": "2efee2c0061c98d459ff12da6245f84d"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑.asset",
+                    "AssetGUID": "cadd1c5a43a314d4dbd780625716eae0"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/增伤1.asset",
+                    "AssetGUID": "fab1839fc14ab274b897b699fddfc5c7"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/快速发射1.asset",
+                    "AssetGUID": "d68d6e92d4bd5ba4cbc95c4f0e5878a2"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法.asset",
+                    "AssetGUID": "d4b062d3c1df94a4ba929f08b26003b2"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法.asset",
+                    "AssetGUID": "db4c5475cebfa104a95a252ac303e1be"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/爆炸子弹.asset",
+                    "AssetGUID": "9036416853d932044be7d79504221cd7"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球.asset",
+                    "AssetGUID": "fc4a88764d210f149a811ea56154310f"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_dll.bundle",
+            "FileName": "8bf22eb1ef7e7f300c9e7080772abd32.bundle",
+            "FileHash": "8bf22eb1ef7e7f300c9e7080772abd32",
+            "FileCRC": 783300230,
+            "FileSize": 10270,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/Hotupdate.dll.bytes",
+                    "AssetGUID": "200958c14fb08b146bab69da7d265c7b"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_dll_aot.bundle",
+            "FileName": "b184b16328c4940454d4db08bad38e26.bundle",
+            "FileHash": "b184b16328c4940454d4db08bad38e26",
+            "FileCRC": 1015141362,
+            "FileSize": 1794206,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/mscorlib.dll.bytes",
+                    "AssetGUID": "e62a9e361be6c134e87a14e6c5d5801f"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/Unity.InputSystem.dll.bytes",
+                    "AssetGUID": "26ce6ccd702c1ce468c435a05f8fe9c0"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.CoreModule.dll.bytes",
+                    "AssetGUID": "e6d4a608b0578434ab2042def44842fb"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.Physics2DModule.dll.bytes",
+                    "AssetGUID": "e968b1c4499041c41a167216876745f3"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/DLL/AOT/YooAsset.dll.bytes",
+                    "AssetGUID": "5ac4e61ae60f41e4e9c22da207e8daf8"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs.bundle",
+            "FileName": "a5ae193f37737f99dffbafa426cdb639.bundle",
+            "FileHash": "a5ae193f37737f99dffbafa426cdb639",
+            "FileCRC": 4228839639,
+            "FileSize": 2317,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/GameRoot.prefab",
+                    "AssetGUID": "109fd19218b073442aa97d33097f1709"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_bullet.bundle",
+            "FileName": "5017d75df8a81d1c2bc9fc6a8990d0aa.bundle",
+            "FileHash": "5017d75df8a81d1c2bc9fc6a8990d0aa",
+            "FileCRC": 1289597480,
+            "FileSize": 5493,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_bullet_minipack_2.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+                "share_assets_art_player.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Bullet/NormalBullet.prefab",
+                    "AssetGUID": "27d06b3f9880cc640b72b291e7dc36b3"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Bullet/PongBullet.prefab",
+                    "AssetGUID": "ebf742bd7c1ef6c4889d7261337d4682"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_enemy.bundle",
+            "FileName": "f42707009d21a71152cff8997870a4ba.bundle",
+            "FileHash": "f42707009d21a71152cff8997870a4ba",
+            "FileCRC": 50710914,
+            "FileSize": 5895,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_hotupdate_data_enemydata.bundle",
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_bullet_minipack_2.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+                "share_assets_art_player.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Enemy/Bat.prefab",
+                    "AssetGUID": "0a67c3bfc97cef149931ccc522a4c50f"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Enemy/NormalEnemy.prefab",
+                    "AssetGUID": "586eb8d05a667ea47b2525ce4867f59b"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_hurttext.bundle",
+            "FileName": "8746b251b0a6fd22f63879e86d257952.bundle",
+            "FileHash": "8746b251b0a6fd22f63879e86d257952",
+            "FileCRC": 170267497,
+            "FileSize": 6985,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_bullet_minipack_2.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+                "share_assets_art_font.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+                "share_assets_art_player.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/HurtText/HurtText.prefab",
+                    "AssetGUID": "007fbdd688bf2704986997d956158219"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_manager.bundle",
+            "FileName": "e09281f4d41ec44a3bc40163707b5fe9.bundle",
+            "FileHash": "e09281f4d41ec44a3bc40163707b5fe9",
+            "FileCRC": 1442376898,
+            "FileSize": 2350,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Manager/PoolManager.prefab",
+                    "AssetGUID": "1d00fa281298f0945863d25ce793e3bf"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_skill.bundle",
+            "FileName": "a05cb49a969f211e0ae0200ac34461ae.bundle",
+            "FileHash": "a05cb49a969f211e0ae0200ac34461ae",
+            "FileCRC": 1096475440,
+            "FileSize": 8364,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_bullet_minipack_2.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+                "share_assets_art_player.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Pong1.prefab",
+                    "AssetGUID": "ee2938214734d9a42a0a41a9dbc913a9"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill1.prefab",
+                    "AssetGUID": "ec9b4b9879dae4c479eb006db95450a1"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill10.prefab",
+                    "AssetGUID": "3bd5aac95c83be248b40036e0ed6c4c1"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill11.prefab",
+                    "AssetGUID": "fa34ac5191a9175468487d8cf238b420"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill12.prefab",
+                    "AssetGUID": "8fab48ba6f554a5479dfd7486b797ead"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill2.prefab",
+                    "AssetGUID": "6899405406ccfa244a04565b4609d7ac"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill3.prefab",
+                    "AssetGUID": "a4b5d356d36b6934c93e29476b64c15a"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill4.prefab",
+                    "AssetGUID": "ce668c7d9f6838040b1feff542f5af5d"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill5.prefab",
+                    "AssetGUID": "e324a5b5a37aee44698011d865cb35f5"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill6.prefab",
+                    "AssetGUID": "61886673589326f47b67bcd4d6f36e74"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill7.prefab",
+                    "AssetGUID": "692a9c46c23dd434bb7d885e2bd3ff09"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill8.prefab",
+                    "AssetGUID": "5536c9acbf67a5c4c9517ce712a6be18"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill9.prefab",
+                    "AssetGUID": "9c7d85e288669834b86a030a6af56671"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_ui.bundle",
+            "FileName": "ef3392e636340c4428df83448cc8a5b3.bundle",
+            "FileHash": "ef3392e636340c4428df83448cc8a5b3",
+            "FileCRC": 2854447222,
+            "FileSize": 11595,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_textmesh_pro_fonts.bundle",
+                "share_assets_textmesh_pro_resources_fonts_&_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel.prefab",
+                    "AssetGUID": "5b6120f211459e148b116d2f9bf7b5b4"
+                },
+                {
+                    "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel2.prefab",
+                    "AssetGUID": "ff5a3c91d39790d4190c6ae6a9fad967"
+                }
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_scenes.bundle",
+            "FileName": "10ed20987f8d0854ee9d3fa6d5cc6c39.bundle",
+            "FileHash": "10ed20987f8d0854ee9d3fa6d5cc6c39",
+            "FileCRC": 467865482,
+            "FileSize": 19369,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "share_assets_animation.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+                "share_assets_art_bullet_explosions_pack_explosion-1-g_sprites.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_bullet_minipack_2.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+                "share_assets_art_normal.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyslash_c_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+                "share_assets_art_player.bundle",
+                "share_packages_com_unity_inputsystem_inputsystem_plugins_playerinput.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/HotUpdate/Scenes/TestScene.unity",
+                    "AssetGUID": "5c5f48dc3eb351a42bea0fabc95d0eb0"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_animation.bundle",
+            "FileName": "94775f700453a5ab1441e5ccf292d28c.bundle",
+            "FileHash": "94775f700453a5ab1441e5ccf292d28c",
+            "FileCRC": 102760924,
+            "FileSize": 18658,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+                "share_assets_art_bullet_minipack_1.bundle",
+                "share_assets_art_bullet_minipack_2.bundle",
+                "share_assets_art_effects_pack_14_1.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+                "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+                "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+                "share_assets_art_player.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Animation/Bat.anim",
+                    "AssetGUID": "3051849b5d120fb4ebfda1171f57b66d"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Bat.controller",
+                    "AssetGUID": "ae3f4e0f08a4e134ba124a470b8b0d50"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Bullet.anim",
+                    "AssetGUID": "ffe1f13d39d9de64489c21aeb5ad1cee"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Circle.controller",
+                    "AssetGUID": "0530a2ef3d11d344b8c104028ced0788"
+                },
+                {
+                    "AssetPath": "Assets/Animation/HurtText.anim",
+                    "AssetGUID": "0f87d55aa6ccba148a8386740073b7ad"
+                },
+                {
+                    "AssetPath": "Assets/Animation/HurtText.controller",
+                    "AssetGUID": "2eb80a930f97cc24a8cbb281878c0940"
+                },
+                {
+                    "AssetPath": "Assets/Animation/NormalBullet.controller",
+                    "AssetGUID": "3edee1bf9f2896045b30fb49e4bacb86"
+                },
+                {
+                    "AssetPath": "Assets/Animation/NormalEnemy.anim",
+                    "AssetGUID": "bf80fceccc995ab4bb45dfdac9095322"
+                },
+                {
+                    "AssetPath": "Assets/Animation/NormalEnemy.controller",
+                    "AssetGUID": "0207dcb4e686f1f42a5fdc91261a3442"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Player.controller",
+                    "AssetGUID": "570dacf762e4ec14fa9d5bb9c26be13b"
+                },
+                {
+                    "AssetPath": "Assets/Animation/PlayerIdle.anim",
+                    "AssetGUID": "6e714af1ee1cf8d45a4fbf08585b84d0"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Pong.controller",
+                    "AssetGUID": "10eec9293842dd44294766beb1c79ba1"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Pong1.anim",
+                    "AssetGUID": "24089bde898c2cc44a5e0f7a78c0b0c3"
+                },
+                {
+                    "AssetPath": "Assets/Animation/PongBullet.anim",
+                    "AssetGUID": "dfc0c23f0ecb92f4a90be9bc71acf811"
+                },
+                {
+                    "AssetPath": "Assets/Animation/PongBullet.controller",
+                    "AssetGUID": "e2b94674bf8f5b34b994c3afb0e9c653"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill1.anim",
+                    "AssetGUID": "94b79a7a6cc8e6e4abd55bcd37952f59"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill10.anim",
+                    "AssetGUID": "133c388505d3abf418e473c70b0eccb4"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill10.controller",
+                    "AssetGUID": "83c108ec89b499e409910daa934a7dcf"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill11.anim",
+                    "AssetGUID": "bdf0b0823e1cf5c478368ec6d3ae9909"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill11.controller",
+                    "AssetGUID": "c9f7032ea15910c47994cfa2e461207b"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill12.anim",
+                    "AssetGUID": "021f6edb45dec444e95bd154d109ba60"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill12.controller",
+                    "AssetGUID": "f8ce5bccd8df9be45bc46c7c90063427"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill2.anim",
+                    "AssetGUID": "7584b00c172bb6d4aac4e6e56a5f0cec"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill2.controller",
+                    "AssetGUID": "06e07877807a95c40842a50906498bb7"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill3.anim",
+                    "AssetGUID": "c048461047cc27949b6ddf3415311fb6"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill3.controller",
+                    "AssetGUID": "1b5541633bdbc2742b492c218e3eb142"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill4.anim",
+                    "AssetGUID": "f08f8cd868812714dbc13a97de9fec6b"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill4.controller",
+                    "AssetGUID": "314ddaee43b41f5408a7f25d7bdc682a"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill5.anim",
+                    "AssetGUID": "50d42bb034c8c8144b97ae59862b1ea3"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill5.controller",
+                    "AssetGUID": "21061005ee1ff5749963339aa76cf703"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill6.anim",
+                    "AssetGUID": "5f68789e6ce39c443a25c017166e5d83"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill6.controller",
+                    "AssetGUID": "0d37104d10901644abc996fc5d0f3774"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill7.anim",
+                    "AssetGUID": "6585e77a03ee51b4abaaeb033ed48ceb"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill7.controller",
+                    "AssetGUID": "4b2dd39303c02724695fd9edbe6766da"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill8.anim",
+                    "AssetGUID": "7dd4b146014d73e458e7c3d17886644c"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill8.controller",
+                    "AssetGUID": "89762d8631cf13f4f9191669cc2770db"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill9.anim",
+                    "AssetGUID": "ec17e30c9a3a8d749a6734909c51580a"
+                },
+                {
+                    "AssetPath": "Assets/Animation/Skill9.controller",
+                    "AssetGUID": "46da3582eb0e820439cc3dd94ad2daaf"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+            "FileName": "ea6b480170e359feeb7dbf3c7e96f08b.bundle",
+            "FileHash": "ea6b480170e359feeb7dbf3c7e96f08b",
+            "FileCRC": 1696923288,
+            "FileSize": 10182,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Bullet/Explosions pack/explosion-1-g/spritesheet.png",
+                    "AssetGUID": "7950a49b7ed52a34094e6a9242b553eb"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_bullet_explosions_pack_explosion-1-g_sprites.bundle",
+            "FileName": "0ef9a9da3c8aee76cad26518504f1549.bundle",
+            "FileHash": "0ef9a9da3c8aee76cad26518504f1549",
+            "FileCRC": 3869679058,
+            "FileSize": 5195,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Bullet/Explosions pack/explosion-1-g/Sprites/frame4.png",
+                    "AssetGUID": "126b656f846c9794a8ebaa6e276b2a70"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_bullet_minipack_1.bundle",
+            "FileName": "b2ce7a80431f7e63b5ccbf35c7462394.bundle",
+            "FileHash": "b2ce7a80431f7e63b5ccbf35c7462394",
+            "FileCRC": 2314565550,
+            "FileSize": 8400,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_0.png",
+                    "AssetGUID": "a27fd3228d12ff74cb032085b18fbd7c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_1.png",
+                    "AssetGUID": "6c1da4ea63a87a1469af6e4cdc4435ec"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_10.png",
+                    "AssetGUID": "f54abff29c684574f9f27f078da4479f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_11.png",
+                    "AssetGUID": "b5becfe4e1cd60a4383ef5e288c17f0b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_12.png",
+                    "AssetGUID": "aeac71cfceda34e42af70c0426fcc56b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_13.png",
+                    "AssetGUID": "1ccd5f91b5542d449a8eab0bae0f512f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_14.png",
+                    "AssetGUID": "7097c0ee118eb264aa8fc0945e61e76d"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_2.png",
+                    "AssetGUID": "de19e8f0e8b5eda43ac2ca67c2d25cda"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_3.png",
+                    "AssetGUID": "bfe77a3c3686449418d692c88f33c5ed"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_4.png",
+                    "AssetGUID": "150d4e9225ee62b4ab4e659b81ccf84f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_5.png",
+                    "AssetGUID": "2aca77c6604f0b842a080ce6691b8920"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_6.png",
+                    "AssetGUID": "7714c26db57b9674e9eadafa81132c5a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_7.png",
+                    "AssetGUID": "0ad3006765d370b42a60b6532cd022c4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_8.png",
+                    "AssetGUID": "b4fc6a12bbec50b469985ab506342cb5"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/1/1_9.png",
+                    "AssetGUID": "6eed2e4df0b519b4192b8a7d59e37b61"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_bullet_minipack_2.bundle",
+            "FileName": "d6a7a9d08cd1a4b5a319b4145d8d81b1.bundle",
+            "FileHash": "d6a7a9d08cd1a4b5a319b4145d8d81b1",
+            "FileCRC": 4124297450,
+            "FileSize": 8337,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_0.png",
+                    "AssetGUID": "130ecbdafc2f10a44a42b76b22f3b2dd"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_1.png",
+                    "AssetGUID": "2df6d90b0b6d1c74db6a8a2379fabc9e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_10.png",
+                    "AssetGUID": "831f1e8532099734f825f1fc09314ee3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_11.png",
+                    "AssetGUID": "bd8651fb6115f8843b45ff5d575180f7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_12.png",
+                    "AssetGUID": "1ee87af9676ae574287d43e8edfe2f95"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_13.png",
+                    "AssetGUID": "f3ca76ba32d6ea240b83e23c8e62a570"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_14.png",
+                    "AssetGUID": "f7c942f59332bd64591c23c8c2a9d097"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_2.png",
+                    "AssetGUID": "7f463dc2d35508c4ab5a85af42e86bab"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_3.png",
+                    "AssetGUID": "b6cb611a07a74384b865d70051609012"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_4.png",
+                    "AssetGUID": "2713c73eefe3f374ab076eb0af27155e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_5.png",
+                    "AssetGUID": "5fa2da143dad64646a3e5fb30bcc21ba"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_6.png",
+                    "AssetGUID": "21a50fcf4b38d604e9d3dc7e1c803cb7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_7.png",
+                    "AssetGUID": "126126038c110644fb11cc9c5532d2ae"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_8.png",
+                    "AssetGUID": "3abde2d08271d4e44b428dd85926ebb3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Bullet/MiniPack/2/1_9.png",
+                    "AssetGUID": "9d2987df8cd5f6543a5f239e859adc97"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_effects_pack_14_1.bundle",
+            "FileName": "34d25a020d0fe603d6b5c9992ab3027b.bundle",
+            "FileHash": "34d25a020d0fe603d6b5c9992ab3027b",
+            "FileCRC": 2149547740,
+            "FileSize": 49467,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/1.png",
+                    "AssetGUID": "e6af530d1f3b3454dab7c1d602d0d0a7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/10.png",
+                    "AssetGUID": "a0bea52b5d7cab3488775b9752b23bb4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/11.png",
+                    "AssetGUID": "c44ccb936814d7949b4e47b7d2d30b63"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/12.png",
+                    "AssetGUID": "7b09149ad5d0fba49ade3b4ad8e41d05"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/13.png",
+                    "AssetGUID": "0186dc8aec1ef6b40812ae7c06396e77"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/14.png",
+                    "AssetGUID": "e33e5a5806f43fe47b254d194c73b9b4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/15.png",
+                    "AssetGUID": "dfea49d176990fa409638ff223d110a5"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/16.png",
+                    "AssetGUID": "e69fdde377e9cf64b822c63f18be1f4a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/17.png",
+                    "AssetGUID": "8a6afc213b4869346b2773d2b01e7b2e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/18.png",
+                    "AssetGUID": "8171c01eabb99394990c5fddb3f7f901"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/19.png",
+                    "AssetGUID": "90807000209ab1c429cf34c2f1775072"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/2.png",
+                    "AssetGUID": "c93f42c290e244848bfdab4dbe81ac91"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/20.png",
+                    "AssetGUID": "1c53e4f96e50e8d4c86d57b23e1db6bb"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/21.png",
+                    "AssetGUID": "6fbde6e3c93815a4eb14379c68e16037"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/22.png",
+                    "AssetGUID": "2b6c40e1b869b0d4798b5672058a52a9"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/23.png",
+                    "AssetGUID": "6b8ec5ddc8dc99e46b9b05e61c52b20b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/24.png",
+                    "AssetGUID": "d6c9faad0e0597b43a0284a4a389a599"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/25.png",
+                    "AssetGUID": "d73d6166bf1b3564baf0c229e56a8eef"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/26.png",
+                    "AssetGUID": "efe5ee206e7d43c4fb7e4b6d83b56b6c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/27.png",
+                    "AssetGUID": "5212b6ae3df10404baf543cb40e25841"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/28.png",
+                    "AssetGUID": "bbc32d8b6b5b29f47ae2a554d4f91d5b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/29.png",
+                    "AssetGUID": "f726300cea36d5d40b2e3dd6ce01d4fb"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/3.png",
+                    "AssetGUID": "ee246a080ff212844ad2170bd3aea8c8"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/30.png",
+                    "AssetGUID": "be9ce147e557f374bb25c0c7a7e11798"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/31.png",
+                    "AssetGUID": "62673dea57991094094147a5acefb702"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/32.png",
+                    "AssetGUID": "bfc0a4ce06e28ff47b0981ea27f9341e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/33.png",
+                    "AssetGUID": "77d407da5ad631248865cfffefd758e9"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/34.png",
+                    "AssetGUID": "17651745fe326b843b63f00e0dfd9cbb"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/35.png",
+                    "AssetGUID": "962eda7c81c9419458853d9d606fcaef"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/36.png",
+                    "AssetGUID": "6e5716017e95fe34e8dd0e1cbf326c91"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/37.png",
+                    "AssetGUID": "b211f0af8384ec04680999bb1f752c4b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/38.png",
+                    "AssetGUID": "add8cb01842e81042b5d0883d7061dbd"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/39.png",
+                    "AssetGUID": "c0254802a3e608f4090cc06b196a1b6b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/4.png",
+                    "AssetGUID": "f98e66e69cef8514ebf146f0a0f65d56"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/40.png",
+                    "AssetGUID": "3b1847ea7a27f7840832eadc7a65a8b8"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/41.png",
+                    "AssetGUID": "ecdbf68d396ba1d4e8edaa52141628e6"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/42.png",
+                    "AssetGUID": "a007b019613cfdd41aadff1c53531280"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/43.png",
+                    "AssetGUID": "45ff8a4e738380443ac9b75134feff5a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/44.png",
+                    "AssetGUID": "ea811ea5e7d2a2640a1117d394032e0a"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/45.png",
+                    "AssetGUID": "f3431b78bbbb3fe44952dc7618f73889"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/46.png",
+                    "AssetGUID": "525bb480ff8001340b6b100c6ca886a7"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/47.png",
+                    "AssetGUID": "4fce66df2f97f6145b84309b1e3f6615"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/48.png",
+                    "AssetGUID": "f84a0d20717856046963670c83d1e91d"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/49.png",
+                    "AssetGUID": "4426114cd7aba074ca61200463bac04b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/5.png",
+                    "AssetGUID": "77015e7c0338222498387b962e6a373e"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/50.png",
+                    "AssetGUID": "f7a592efa9c4b0346853441020f482d2"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/51.png",
+                    "AssetGUID": "c9f37be86c28f664e8f64d49516803d8"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/52.png",
+                    "AssetGUID": "519d62e10603e0e4ca9768c845de1bc4"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/53.png",
+                    "AssetGUID": "a8d0c137528562d42be3d5088bf5e496"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/54.png",
+                    "AssetGUID": "edf1bb968326ace4b8dba5fa7d866771"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/55.png",
+                    "AssetGUID": "7d897719fbeca094ea5f6854d1cdc62f"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/56.png",
+                    "AssetGUID": "e06c1af342cc9ae49a09ae82449f28ab"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/57.png",
+                    "AssetGUID": "1bc2d9bc386bf9c4aa4267805490895b"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/58.png",
+                    "AssetGUID": "813b9aa39e6c1694c91ce03195e67db6"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/59.png",
+                    "AssetGUID": "b95c7ebc67293d04eb9c31967c509546"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/6.png",
+                    "AssetGUID": "5d1edfe6b49e0a14a9aa6bb9e96b6a01"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/60.png",
+                    "AssetGUID": "9d40770fe155d8047a8efb04a1f223f3"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/7.png",
+                    "AssetGUID": "f9dcd263a47fb29419c158c495300d7c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/8.png",
+                    "AssetGUID": "87a2b27a2e9ff1a47aee0d70654391ee"
+                },
+                {
+                    "AssetPath": "Assets/Art/Effects Pack 14/1/9.png",
+                    "AssetGUID": "00d4da6aac7d89741bee6fe191fd3fca"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+            "FileName": "61c98837a963502eff4af95a1837f89f.bundle",
+            "FileHash": "61c98837a963502eff4af95a1837f89f",
+            "FileCRC": 2319261462,
+            "FileSize": 7897,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Enemy/Enemy_Single_Winter_Canines/Bat_Fly.png",
+                    "AssetGUID": "7f20c381482fbda44ad20e943f0b178e"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+            "FileName": "d520bbd9c13cff623117dc8eb090c0f6.bundle",
+            "FileHash": "d520bbd9c13cff623117dc8eb090c0f6",
+            "FileCRC": 1176514828,
+            "FileSize": 9080,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Enemy/Enemy_Single_Winter_Canines/Canines/Canine_White_Run.png",
+                    "AssetGUID": "1b13c9e1069a3d545926e26746a8991e"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_font.bundle",
+            "FileName": "2433aeb9c8e958b696ab16a4e786554e.bundle",
+            "FileHash": "2433aeb9c8e958b696ab16a4e786554e",
+            "FileCRC": 2132503917,
+            "FileSize": 8014685,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_hurttext.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Font/LuoLITi SDF.asset",
+                    "AssetGUID": "373a8c894c7d4c64590c26e94ad7b366"
+                },
+                {
+                    "AssetPath": "Assets/Art/Font/LuoLITi.ttf",
+                    "AssetGUID": "20ed8b12022a37748bf2b73de6e7b0b4"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_normal.bundle",
+            "FileName": "6acc8d3c2d7e6f97076fc10013fdf157.bundle",
+            "FileHash": "6acc8d3c2d7e6f97076fc10013fdf157",
+            "FileCRC": 3552739550,
+            "FileSize": 116287,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Normal/4e517e8154573099f12b377a1b5a3e38.png",
+                    "AssetGUID": "a79391742a0dfa245905ed215079a3f1"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+            "FileName": "09a028f96d9f686ae8b3728797500f2b.bundle",
+            "FileHash": "09a028f96d9f686ae8b3728797500f2b",
+            "FileCRC": 3086755653,
+            "FileSize": 211613,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/00.png",
+                    "AssetGUID": "8b8b32438cd25a54b8ee600c9719bf3c"
+                },
+                {
+                    "AssetPath": "Assets/Art/Pixel Holy Spell Effect 32x32 Pack 3/01.png",
+                    "AssetGUID": "724ddc097289cc243bccaf73ba024c14"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+            "FileName": "c23eda7f73d64f7a7ac6c2539578446f.bundle",
+            "FileHash": "c23eda7f73d64f7a7ac6c2539578446f",
+            "FileCRC": 3362780474,
+            "FileSize": 17064,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_01.png",
+                    "AssetGUID": "e0b2527b991b2ba4fb5fdfd496edde00"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_02.png",
+                    "AssetGUID": "115a62d208a080f4c973c242ad768954"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_03.png",
+                    "AssetGUID": "fc08f14d3252d364e86098f03ebe9ffa"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_04.png",
+                    "AssetGUID": "8d2e734a015560e459533364487a3d4a"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_05.png",
+                    "AssetGUID": "916f8e52298fc7a428348f45b3108ef7"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_06.png",
+                    "AssetGUID": "4a5dd6a1c18500b41ad9b9cb9245d592"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_07.png",
+                    "AssetGUID": "4a687202164b17d4d953808d7ed7dc0f"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_08.png",
+                    "AssetGUID": "0ed2a0792d4e4364194efff9e3b6e45a"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_09.png",
+                    "AssetGUID": "bce175d51fc14374287e4a2ab8b35eb4"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_10.png",
+                    "AssetGUID": "4f7427b12f787384b953332f8cbacc49"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_11.png",
+                    "AssetGUID": "9f4cb03fbd0802341906ad7f465e2be1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HeavensFury/Frames/HeavensFury_12.png",
+                    "AssetGUID": "295f269f9b59f244c9b9225685c2ff49"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+            "FileName": "1ec375150c7803635033198171bcb184.bundle",
+            "FileHash": "1ec375150c7803635033198171bcb184",
+            "FileCRC": 2856632118,
+            "FileSize": 17434,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_01.png",
+                    "AssetGUID": "cfbb999d817c3bc438c7a19fe7764ecd"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_02.png",
+                    "AssetGUID": "5091493ec0fd5374d940767bad500586"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_03.png",
+                    "AssetGUID": "4fe37a5eb9f167a4bafad0d02c7a2f8e"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_04.png",
+                    "AssetGUID": "d1c277f784f57fe46a45bc521f7b3f16"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_05.png",
+                    "AssetGUID": "a2de7e361f5076e4b9a7fa54e8654ea3"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_06.png",
+                    "AssetGUID": "72ba10c3da271844a916cacc030708f4"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_07.png",
+                    "AssetGUID": "9cc7550399dbec9479c74e06e74609fc"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_08.png",
+                    "AssetGUID": "a51e3f8539aadf74f9eef68b09fc77ed"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_09.png",
+                    "AssetGUID": "f9ac78c20b73c864e8cd7a6fadee2afe"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_10.png",
+                    "AssetGUID": "64b471e22697ac543a583f4480925e13"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolyShield/Frames/HolyShield_11.png",
+                    "AssetGUID": "c2f6e7cf5c373914aae4e55e7227184a"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_holyslash_c_frames.bundle",
+            "FileName": "6b96a66d82ffa93a9f2ab248f875a844.bundle",
+            "FileHash": "6b96a66d82ffa93a9f2ab248f875a844",
+            "FileCRC": 182852176,
+            "FileSize": 5726,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/HolySlash_C/Frames/HolySlash_C_02.png",
+                    "AssetGUID": "cb2dab411d7a06b40910fff6caea5ed9"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+            "FileName": "b9921f7637e56d56cbe344d2d6fbe317.bundle",
+            "FileHash": "b9921f7637e56d56cbe344d2d6fbe317",
+            "FileCRC": 1928725069,
+            "FileSize": 13354,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_01.png",
+                    "AssetGUID": "218069f7821e85841ad163e5ad1bf7b8"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_02.png",
+                    "AssetGUID": "70b4e0ffc5a967e419a9b465545b7562"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_03.png",
+                    "AssetGUID": "18d65446be8544a4eb0c7a84f88373bf"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_04.png",
+                    "AssetGUID": "18199fc549c6a2a4fb4e490029f7d197"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_05.png",
+                    "AssetGUID": "49bd3573ba68f6148880fd2b09c31c6d"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_06.png",
+                    "AssetGUID": "1ca21526314d68544b479bd12280f613"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_07.png",
+                    "AssetGUID": "198bbed3a88df1a4f806da88e2215c38"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_08.png",
+                    "AssetGUID": "583b65232ea24a64eaf274b128a5f7b1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_09.png",
+                    "AssetGUID": "8d63b662408689c4c87856f194372c7c"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_10.png",
+                    "AssetGUID": "d18aa97a4bac1954eba74c65c707d2a1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/Smite/Frames/Smite_11.png",
+                    "AssetGUID": "36f43983fea6d384985daf392c7e607e"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+            "FileName": "e0fe61f1498c96a602f7be9202ea8ee4.bundle",
+            "FileHash": "e0fe61f1498c96a602f7be9202ea8ee4",
+            "FileCRC": 3644520686,
+            "FileSize": 24893,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Aseprite (Raw)/SwordOfJustice.aseprite",
+                    "AssetGUID": "1c850a4efee19994ab69a0ae1863d2b3"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+            "FileName": "47410eea4ee24ebb231f7863cd93d8f4.bundle",
+            "FileHash": "47410eea4ee24ebb231f7863cd93d8f4",
+            "FileCRC": 441586575,
+            "FileSize": 18222,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_01.png",
+                    "AssetGUID": "ce1c3bba133ba604481c7b3e900f2648"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_02.png",
+                    "AssetGUID": "c228417ce4c771c458bf7298effdda31"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_03.png",
+                    "AssetGUID": "e6993335d9304504092289996e37f4d1"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_04.png",
+                    "AssetGUID": "b9c01fe76ad168b4b81620c3c8ab0409"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_05.png",
+                    "AssetGUID": "b1ed17320c26ef642b4afde7ae0f7eff"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_06.png",
+                    "AssetGUID": "da902bd1627e548448b326521e2aa314"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_07.png",
+                    "AssetGUID": "cb82647214412254eb6e3a1a238e474d"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_08.png",
+                    "AssetGUID": "64e9ac5bfe7a3cc49bd9ad6d48d0ceeb"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_09.png",
+                    "AssetGUID": "8e1e3c620ec849a46a44ab07ddb852aa"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_10.png",
+                    "AssetGUID": "06e1f326b9d9a214c90b9afb32ffc826"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_11.png",
+                    "AssetGUID": "fe12fab9113b3bb42b362ee7800951df"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_12.png",
+                    "AssetGUID": "0c1e072790d2d61468268c48e088f1f3"
+                },
+                {
+                    "AssetPath": "Assets/Art/PixelHolyEffectsPack01 v1_1/SwordOfJustice/Frames/SwordOfJustice_13.png",
+                    "AssetGUID": "9d51451d6167ede40b3d7b980648b296"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_player.bundle",
+            "FileName": "6e7dc4758f0fbf0fe29ee23550df6ce1.bundle",
+            "FileHash": "6e7dc4758f0fbf0fe29ee23550df6ce1",
+            "FileCRC": 3252726200,
+            "FileSize": 432331,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_animation.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/Art/Player/Necromancer_creativekind-Sheet.png",
+                    "AssetGUID": "98ac7703e6fd2bb49ae6780a685cd04a"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_textmesh_pro_fonts.bundle",
+            "FileName": "c07d7c1c67b643751280448678588ca8.bundle",
+            "FileHash": "c07d7c1c67b643751280448678588ca8",
+            "FileCRC": 417369207,
+            "FileSize": 227271,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_ui.bundle",
+                "share_assets_textmesh_pro_resources_fonts_&_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+                    "AssetGUID": "e3265ab4bf004d28a9537516768c1c75"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_assets_textmesh_pro_resources_fonts_&_materials.bundle",
+            "FileName": "c82047eb0631e3397973baf6531b6818.bundle",
+            "FileHash": "c82047eb0631e3397973baf6531b6818",
+            "FileCRC": 1857832981,
+            "FileSize": 373332,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "share_assets_textmesh_pro_fonts.bundle",
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdate_prefs_ui.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+                    "AssetGUID": "2e498d1c8094910479dc3e1b768306a4"
+                },
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                    "AssetGUID": "8f586378b4e144a9851e7b34d9b748ee"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_inputsystem_inputsystem_plugins_playerinput.bundle",
+            "FileName": "22758a90af135e6e4889abc2299c2467.bundle",
+            "FileHash": "22758a90af135e6e4889abc2299c2467",
+            "FileCRC": 2758051998,
+            "FileSize": 7694,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions",
+                    "AssetGUID": "ca9f5fa95ffab41fb9a615ab714db018"
+                }
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+            "FileName": "768912d143ac91a3ea1a043d5e9a2c6d.bundle",
+            "FileHash": "768912d143ac91a3ea1a043d5e9a2c6d",
+            "FileCRC": 2508609350,
+            "FileSize": 2452,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "unityshaders.bundle"
+            ],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+                    "AssetGUID": "a97c105638bdf8b4a8650670310a4cd3"
+                }
+            ]
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "FileName": "ef035dc7a50f60cf229aa0293c437b24.bundle",
+            "FileHash": "ef035dc7a50f60cf229aa0293c437b24",
+            "FileCRC": 2896601674,
+            "FileSize": 30475,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "assets_hotupdate_data_skilldata.bundle",
+                "assets_hotupdate_prefs_bullet.bundle",
+                "assets_hotupdate_prefs_enemy.bundle",
+                "assets_hotupdate_prefs_hurttext.bundle",
+                "assets_hotupdate_prefs_skill.bundle",
+                "assets_hotupdate_prefs_ui.bundle",
+                "assets_hotupdate_scenes.bundle",
+                "share_assets_art_font.bundle",
+                "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+                "share_assets_textmesh_pro_resources_fonts_&_materials.bundle",
+                "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+                    "AssetGUID": "68e6db2ebdc24f95958faec2be5558d6"
+                },
+                {
+                    "AssetPath": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+                    "AssetGUID": "fe393ace9b354375a9cb14cdbbc28be4"
+                },
+                {
+                    "AssetPath": "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+                    "AssetGUID": "e260cfa7296ee7642b167f1eb5be5023"
+                }
+            ]
+        }
+    ],
+    "IndependAssets": []
+}

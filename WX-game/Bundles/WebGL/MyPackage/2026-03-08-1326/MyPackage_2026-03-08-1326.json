@@ -1,0 +1,967 @@
+{
+    "FileVersion": "2025.9.30",
+    "EnableAddressable": true,
+    "SupportExtensionless": true,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "ReplaceAssetPathWithAddress": false,
+    "OutputNameStyle": 0,
+    "BuildBundleType": 2,
+    "BuildPipeline": "ScriptableBuildPipeline",
+    "PackageName": "MyPackage",
+    "PackageVersion": "2026-03-08-1326",
+    "PackageNote": "2026/3/8 22:06:23",
+    "AssetList": [
+        {
+            "Address": "BatData",
+            "AssetPath": "Assets/HotUpdate/Data/EnemyData/BatData.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "NormalEnemyData",
+            "AssetPath": "Assets/HotUpdate/Data/EnemyData/NormalEnemyData.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "demo_tbitem",
+            "AssetPath": "Assets/HotUpdate/Data/JSON/demo_tbitem.json",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "skill_tbskill",
+            "AssetPath": "Assets/HotUpdate/Data/JSON/skill_tbskill.json",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "光柱",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/光柱.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                28,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "圣剑",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/圣剑.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                28,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "增伤1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/增伤1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                26,
+                35
+            ]
+        },
+        {
+            "Address": "快速发射1",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/快速发射1.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                16,
+                35
+            ]
+        },
+        {
+            "Address": "水魔法",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/水魔法.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                23,
+                35
+            ]
+        },
+        {
+            "Address": "浪潮魔法",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/浪潮魔法.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                23,
+                35
+            ]
+        },
+        {
+            "Address": "爆炸子弹",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/爆炸子弹.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                15,
+                35
+            ]
+        },
+        {
+            "Address": "雷球",
+            "AssetPath": "Assets/HotUpdate/Data/SkillData/雷球.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                18,
+                35
+            ]
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/mscorlib.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Unity.InputSystem.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/Unity.InputSystem.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UnityEngine.CoreModule.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.CoreModule.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UnityEngine.Physics2DModule.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/UnityEngine.Physics2DModule.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "YooAsset.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/AOT/YooAsset.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Hotupdate.dll",
+            "AssetPath": "Assets/HotUpdate/DLL/Hotupdate.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "NormalBullet",
+            "AssetPath": "Assets/HotUpdate/Prefs/Bullet/NormalBullet.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                13,
+                16,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "PongBullet",
+            "AssetPath": "Assets/HotUpdate/Prefs/Bullet/PongBullet.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                13,
+                17,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Bat",
+            "AssetPath": "Assets/HotUpdate/Prefs/Enemy/Bat.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": [
+                0,
+                13,
+                19,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "NormalEnemy",
+            "AssetPath": "Assets/HotUpdate/Prefs/Enemy/NormalEnemy.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": [
+                0,
+                13,
+                20,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "GameRoot",
+            "AssetPath": "Assets/HotUpdate/Prefs/GameRoot.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HurtText",
+            "AssetPath": "Assets/HotUpdate/Prefs/HurtText/HurtText.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": [
+                13,
+                21,
+                35
+            ]
+        },
+        {
+            "Address": "PoolManager",
+            "AssetPath": "Assets/HotUpdate/Prefs/Manager/PoolManager.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Pong1",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Pong1.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                14,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill1",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill1.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                23,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill10",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill10.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                25,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill11",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill11.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                27,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill12",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill12.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                18,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill2",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill2.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                23,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill3",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill3.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                23,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill4",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill4.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                23,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill5",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill5.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                23,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill6",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill6.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                23,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill7",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill7.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                23,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill8",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill8.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                24,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "Skill9",
+            "AssetPath": "Assets/HotUpdate/Prefs/Skill/Skill9.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13,
+                29,
+                34,
+                35
+            ]
+        },
+        {
+            "Address": "TestPanel",
+            "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": [
+                31,
+                32,
+                35
+            ]
+        },
+        {
+            "Address": "TestPanel2",
+            "AssetPath": "Assets/HotUpdate/Prefs/UI/TestPanel2.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": [
+                35
+            ]
+        },
+        {
+            "Address": "TestScene",
+            "AssetPath": "Assets/HotUpdate/Scenes/TestScene.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 12,
+            "DependBundleIDs": [
+                2,
+                9,
+                13,
+                15,
+                16,
+                18,
+                22,
+                23,
+                26,
+                28,
+                30,
+                33,
+                34,
+                35
+            ]
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "assets_hotupdate_data_enemydata.bundle",
+            "UnityCRC": 1862268137,
+            "FileHash": "700a434ef3f6a55821dc39f8eb45c02d",
+            "FileCRC": 860036802,
+            "FileSize": 1917,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_json.bundle",
+            "UnityCRC": 2896867948,
+            "FileHash": "1afa00494b2242002dcd694f4dfa3a15",
+            "FileCRC": 2228052662,
+            "FileSize": 1677,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_data_skilldata.bundle",
+            "UnityCRC": 1918426409,
+            "FileHash": "f9facaa63abdf0e93028fa842af2fc07",
+            "FileCRC": 3544762849,
+            "FileSize": 3217,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                15,
+                16,
+                18,
+                23,
+                26,
+                28,
+                34,
+                35
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_dll.bundle",
+            "UnityCRC": 1828676991,
+            "FileHash": "8bf22eb1ef7e7f300c9e7080772abd32",
+            "FileCRC": 783300230,
+            "FileSize": 10270,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_dll_aot.bundle",
+            "UnityCRC": 1453763149,
+            "FileHash": "b184b16328c4940454d4db08bad38e26",
+            "FileCRC": 1015141362,
+            "FileSize": 1794206,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs.bundle",
+            "UnityCRC": 2081184278,
+            "FileHash": "a5ae193f37737f99dffbafa426cdb639",
+            "FileCRC": 4228839639,
+            "FileSize": 2317,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_bullet.bundle",
+            "UnityCRC": 690841183,
+            "FileHash": "5017d75df8a81d1c2bc9fc6a8990d0aa",
+            "FileCRC": 1289597480,
+            "FileSize": 5493,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                13,
+                14,
+                16,
+                17,
+                18,
+                19,
+                20,
+                23,
+                24,
+                25,
+                27,
+                29,
+                30,
+                34,
+                35
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_enemy.bundle",
+            "UnityCRC": 432659047,
+            "FileHash": "f42707009d21a71152cff8997870a4ba",
+            "FileCRC": 50710914,
+            "FileSize": 5895,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                0,
+                13,
+                14,
+                16,
+                17,
+                18,
+                19,
+                20,
+                23,
+                24,
+                25,
+                27,
+                29,
+                30,
+                34,
+                35
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_hurttext.bundle",
+            "UnityCRC": 2647363522,
+            "FileHash": "8746b251b0a6fd22f63879e86d257952",
+            "FileCRC": 170267497,
+            "FileSize": 6985,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                13,
+                14,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                23,
+                24,
+                25,
+                27,
+                29,
+                30,
+                35
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_manager.bundle",
+            "UnityCRC": 2642098921,
+            "FileHash": "e09281f4d41ec44a3bc40163707b5fe9",
+            "FileCRC": 1442376898,
+            "FileSize": 2350,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_skill.bundle",
+            "UnityCRC": 1709279611,
+            "FileHash": "a05cb49a969f211e0ae0200ac34461ae",
+            "FileCRC": 1096475440,
+            "FileSize": 8364,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                13,
+                14,
+                16,
+                17,
+                18,
+                19,
+                20,
+                23,
+                24,
+                25,
+                27,
+                29,
+                30,
+                34,
+                35
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_prefs_ui.bundle",
+            "UnityCRC": 4122041827,
+            "FileHash": "ef3392e636340c4428df83448cc8a5b3",
+            "FileCRC": 2854447222,
+            "FileSize": 11595,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                31,
+                32,
+                35
+            ]
+        },
+        {
+            "BundleName": "assets_hotupdate_scenes.bundle",
+            "UnityCRC": 1643404610,
+            "FileHash": "10ed20987f8d0854ee9d3fa6d5cc6c39",
+            "FileCRC": 467865482,
+            "FileSize": 19369,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                2,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                33,
+                34,
+                35
+            ]
+        },
+        {
+            "BundleName": "share_assets_animation.bundle",
+            "UnityCRC": 746048170,
+            "FileHash": "94775f700453a5ab1441e5ccf292d28c",
+            "FileCRC": 102760924,
+            "FileSize": 18658,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                14,
+                16,
+                17,
+                18,
+                19,
+                20,
+                23,
+                24,
+                25,
+                27,
+                29,
+                30
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_bullet_explosions_pack_explosion-1-g.bundle",
+            "UnityCRC": 4166214106,
+            "FileHash": "ea6b480170e359feeb7dbf3c7e96f08b",
+            "FileCRC": 1696923288,
+            "FileSize": 10182,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_bullet_explosions_pack_explosion-1-g_sprites.bundle",
+            "UnityCRC": 1766542820,
+            "FileHash": "0ef9a9da3c8aee76cad26518504f1549",
+            "FileCRC": 3869679058,
+            "FileSize": 5195,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_bullet_minipack_1.bundle",
+            "UnityCRC": 3583273778,
+            "FileHash": "b2ce7a80431f7e63b5ccbf35c7462394",
+            "FileCRC": 2314565550,
+            "FileSize": 8400,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_bullet_minipack_2.bundle",
+            "UnityCRC": 1627327027,
+            "FileHash": "d6a7a9d08cd1a4b5a319b4145d8d81b1",
+            "FileCRC": 4124297450,
+            "FileSize": 8337,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_effects_pack_14_1.bundle",
+            "UnityCRC": 4070284171,
+            "FileHash": "34d25a020d0fe603d6b5c9992ab3027b",
+            "FileCRC": 2149547740,
+            "FileSize": 49467,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_enemy_enemy_single_winter_canines.bundle",
+            "UnityCRC": 42322850,
+            "FileHash": "61c98837a963502eff4af95a1837f89f",
+            "FileCRC": 2319261462,
+            "FileSize": 7897,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_enemy_enemy_single_winter_canines_canines.bundle",
+            "UnityCRC": 2479913701,
+            "FileHash": "d520bbd9c13cff623117dc8eb090c0f6",
+            "FileCRC": 1176514828,
+            "FileSize": 9080,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_font.bundle",
+            "UnityCRC": 2216631535,
+            "FileHash": "2433aeb9c8e958b696ab16a4e786554e",
+            "FileCRC": 2132503917,
+            "FileSize": 8014685,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                35
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_normal.bundle",
+            "UnityCRC": 1114248990,
+            "FileHash": "6acc8d3c2d7e6f97076fc10013fdf157",
+            "FileCRC": 3552739550,
+            "FileSize": 116287,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_pixel_holy_spell_effect_32x32_pack_3.bundle",
+            "UnityCRC": 1703722631,
+            "FileHash": "09a028f96d9f686ae8b3728797500f2b",
+            "FileCRC": 3086755653,
+            "FileSize": 211613,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_heavensfury_frames.bundle",
+            "UnityCRC": 2067612422,
+            "FileHash": "c23eda7f73d64f7a7ac6c2539578446f",
+            "FileCRC": 3362780474,
+            "FileSize": 17064,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_holyshield_frames.bundle",
+            "UnityCRC": 3002749991,
+            "FileHash": "1ec375150c7803635033198171bcb184",
+            "FileCRC": 2856632118,
+            "FileSize": 17434,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_holyslash_c_frames.bundle",
+            "UnityCRC": 117422271,
+            "FileHash": "6b96a66d82ffa93a9f2ab248f875a844",
+            "FileCRC": 182852176,
+            "FileSize": 5726,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_smite_frames.bundle",
+            "UnityCRC": 2741935823,
+            "FileHash": "b9921f7637e56d56cbe344d2d6fbe317",
+            "FileCRC": 1928725069,
+            "FileSize": 13354,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_aseprite_(raw).bundle",
+            "UnityCRC": 3871966199,
+            "FileHash": "e0fe61f1498c96a602f7be9202ea8ee4",
+            "FileCRC": 3644520686,
+            "FileSize": 24893,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                34,
+                35
+            ]
+        },
+        {
+            "BundleName": "share_assets_art_pixelholyeffectspack01_v1_1_swordofjustice_frames.bundle",
+            "UnityCRC": 2554442061,
+            "FileHash": "47410eea4ee24ebb231f7863cd93d8f4",
+            "FileCRC": 441586575,
+            "FileSize": 18222,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_art_player.bundle",
+            "UnityCRC": 4148859250,
+            "FileHash": "6e7dc4758f0fbf0fe29ee23550df6ce1",
+            "FileCRC": 3252726200,
+            "FileSize": 432331,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_textmesh_pro_fonts.bundle",
+            "UnityCRC": 425447688,
+            "FileHash": "c07d7c1c67b643751280448678588ca8",
+            "FileCRC": 417369207,
+            "FileSize": 227271,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_assets_textmesh_pro_resources_fonts_&_materials.bundle",
+            "UnityCRC": 1089989650,
+            "FileHash": "c82047eb0631e3397973baf6531b6818",
+            "FileCRC": 1857832981,
+            "FileSize": 373332,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                31,
+                35
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_inputsystem_inputsystem_plugins_playerinput.bundle",
+            "UnityCRC": 2536506597,
+            "FileHash": "22758a90af135e6e4889abc2299c2467",
+            "FileCRC": 2758051998,
+            "FileSize": 7694,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "share_packages_com_unity_render-pipelines_universal_runtime_materials.bundle",
+            "UnityCRC": 2148574969,
+            "FileHash": "768912d143ac91a3ea1a043d5e9a2c6d",
+            "FileCRC": 2508609350,
+            "FileSize": 2452,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                35
+            ]
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "UnityCRC": 3569015820,
+            "FileHash": "ef035dc7a50f60cf229aa0293c437b24",
+            "FileCRC": 2896601674,
+            "FileSize": 30475,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        }
+    ]
+}

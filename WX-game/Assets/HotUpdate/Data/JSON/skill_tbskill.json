@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1001,
+    "Name": "水魔法",
+    "BaseHurt": 10,
+    "HurtRange": 2,
+    "AttackSpeed": 2,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1002,
+    "Name": "浪潮魔法",
+    "BaseHurt": 15,
+    "HurtRange": 3,
+    "AttackSpeed": 3,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1003,
+    "Name": "光柱",
+    "BaseHurt": 12,
+    "HurtRange": 2,
+    "AttackSpeed": 2,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1004,
+    "Name": "圣剑",
+    "BaseHurt": 20,
+    "HurtRange": 4,
+    "AttackSpeed": 3.5,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1005,
+    "Name": "雷球",
+    "BaseHurt": 25,
+    "HurtRange": 5,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1006,
+    "Name": "快速发射1",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0.2
+  },
+  {
+    "id": 1007,
+    "Name": "增伤1",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0.1
+  },
+  {
+    "id": 1008,
+    "Name": "爆炸子弹",
+    "BaseHurt": 7,
+    "HurtRange": 1,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1009,
+    "Name": "水魔法1",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 2
+  },
+  {
+    "id": 1010,
+    "Name": "水魔法2",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0.2,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1011,
+    "Name": "水魔法3",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0.2,
+    "Amplification": 0
+  },
+  {
+    "id": 1012,
+    "Name": "浪潮魔法1",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 3
+  },
+  {
+    "id": 1013,
+    "Name": "浪潮魔法2",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0.15,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1014,
+    "Name": "浪潮魔法3",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0.3,
+    "Amplification": 0
+  },
+  {
+    "id": 1015,
+    "Name": "雷球1",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 3
+  },
+  {
+    "id": 1016,
+    "Name": "雷球2",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 20
+  },
+  {
+    "id": 1017,
+    "Name": "雷球3",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1018,
+    "Name": "圣剑1",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 2
+  },
+  {
+    "id": 1019,
+    "Name": "圣剑2",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0.2,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1020,
+    "Name": "圣剑3",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0.1,
+    "Amplification": 0
+  },
+  {
+    "id": 1021,
+    "Name": "光柱1",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0,
+    "Amplification": 2
+  },
+  {
+    "id": 1022,
+    "Name": "光柱2",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0.15,
+    "Cooldownreduction": 0,
+    "Amplification": 0
+  },
+  {
+    "id": 1023,
+    "Name": "光柱3",
+    "BaseHurt": 0,
+    "HurtRange": 0,
+    "AttackSpeed": 0,
+    "Scale": 0,
+    "Cooldownreduction": 0.3,
+    "Amplification": 0
+  }
+]
